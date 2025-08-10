@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 function Start(){
+    const [statulPerfil, setStatusPerfil] = useState(true)
+    
     return(
         <>
         <div className="flex w-full bg-gradient-to-r from-[#035f78] to-[#121e4e] p-0.5 rounded-lg">
@@ -14,7 +18,12 @@ function Start(){
             </div>
             <div className="bg-gradient-to-r from-[#035f78] to-[#121e4e] rounded-full p-2">
                 <div className="p-2 bg-neutral-900/80 rounded-full">
-                    <img src="/perfil.png" alt="" className="rounded-full size-98" />
+                    <img 
+                     src={statulPerfil? "/perfil.png": "/perfil2.png"} 
+                     alt=""
+                     className="rounded-full size-98 cursor-pointer"
+                     onClick={()=>{setStatusPerfil(!statulPerfil)}}
+                     />
                 </div>
             </div>
             </div>
