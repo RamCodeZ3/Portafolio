@@ -7,7 +7,7 @@ function App() {
     <>
     <Header/>
     <main className='bg-neutral-900 flex flex-col gap-10 w-full min-h-dvh justify-center items-center '>
-      <section>
+      <section className="mt-20">
         <Start/>
       </section>
     </main>

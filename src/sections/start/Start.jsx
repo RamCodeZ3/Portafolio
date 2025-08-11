@@ -1,4 +1,5 @@
 import { useState } from "react";
+import StackTecnology from "./StackTecnology";
 
 function Start(){
     const [statulPerfil, setStatusPerfil] = useState(true)
@@ -21,12 +22,16 @@ function Start(){
                     <img 
                      src={statulPerfil? "/perfil.png": "/perfil2.png"} 
                      alt=""
-                     className="rounded-full size-98 cursor-pointer"
+                     className="rounded-full size-98 cursor-pointer select-none"
                      onClick={()=>{setStatusPerfil(!statulPerfil)}}
                      />
                 </div>
             </div>
             </div>
+            </div>
+            
+            <div>
+                <StackTecnology/>
             </div>
         </>
     )

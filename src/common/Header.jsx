@@ -17,9 +17,10 @@ function Header(){
                     </div>
                     <div className="flex gap-4">
                         <a href='#start'>Inicio</a>
+                        <a href="">Experiencia</a>
+                        <a href="">Proyectos</a>
                         <a href='#add'>Servicios</a>
                         <a href="">Sobre mi</a>
-                        <a href="">Proyectos</a>
                         <a href='#start'>Contactos</a>
                      </div>
                 </header>
