@@ -7,8 +7,7 @@ function Header(){
     return(
         <>
         <div className="fixed flex justify-center items-center w-full h-18 z-10 top-0 p-4 ">
-            <div className="flex bg-gradient-to-r from-[#035f78] to-[#121e4e] w-[90%] p-0.5 items-center justify-center rounded-lg">
-                <header className="flex w-full z-10 top-0 left-0 py-2 px-2 text-white items-center justify-around rounded-lg bg-neutral-900">
+                <header className="flex w-[90%] z-10 top-0 left-0 py-2 px-2 text-white items-center justify-around rounded-lg bg-black/40 backdrop-blur-2xl border-1 border-[#035f78]">
                     <div className="flex items-center"
                         onClick={handleDivClick}
                         >
@@ -23,9 +22,12 @@ function Header(){
                         <a href="">Sobre mi</a>
                         <a href='#start'>Contactos</a>
                      </div>
+                     <select name="" id="">
+                        <option value="">Español</option>
+                        <option value="">Ingles</option>
+                     </select>
                 </header>
             </div>
-       </div>
         </>
     )
 }
