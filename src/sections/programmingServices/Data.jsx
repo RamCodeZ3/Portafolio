@@ -1,4 +1,4 @@
-import { Bot, PanelTop, FileCode } from 'lucide-react';
+import { Bot, PanelTop, FileCode, FileCode2 } from 'lucide-react';
 
 const services = [
   {
@@ -17,7 +17,7 @@ const services = [
     description: "Desarrollo programas personalizados y scripts para automatizar procesos, analizar datos y conectar con APIs. Soluciones adaptadas para optimizar el trabajo y mejorar la productividad."
   },
   {
-    icon: <FileCode />,
+    icon: <FileCode2 />,
     title: "Web Scraping",
     description: "Creo herramientas para extraer, procesar y organizar datos desde la web. Uso Python para scraping avanzado, integración de APIs y automatización de reportes personalizados."
   }
