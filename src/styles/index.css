@@ -3,6 +3,5 @@
 @layer base {
     body{
         @apply text-white
-        
     }
 }
