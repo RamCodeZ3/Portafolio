@@ -1,7 +1,7 @@
 import Header from "./common/Header"
 import Start from "./sections/start/Start"
 import Services from "./sections/programmingServices/Services"
-import Form from "./sections/contatcs/Form"
+import Contacts from "./sections/contatcs/Contatcs"
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
         <Services/>
       </section>
       <section className="">
-        <Form/>
+        <Contacts/>
       </section>
     </main>
     </>
