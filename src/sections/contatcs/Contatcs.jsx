@@ -1,5 +1,6 @@
 import Form from "./Form";
 import FastContacts from "./FastContacts";
+import WorkingHours from "./WorkingHours";
 import TitleSections from "../../common/TitleSections";
 
 function Contacts(){
@@ -9,7 +10,10 @@ function Contacts(){
             <TitleSections title={"Contactos"}/>
           <div className="flex gap-6">
             <Form/>
-            <FastContacts/>
+            <div className="flex flex-col gap-4">
+              <FastContacts/>
+              <WorkingHours/>
+            </div>
           </div>
         </div>
         </>
