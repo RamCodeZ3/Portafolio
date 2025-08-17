@@ -14,7 +14,7 @@ function Header(){
                         <img src="/imagenHeader.png" className="" alt="" />
                         <span className="font-bold text-lg">RamCode</span>
                     </div>
-                    <div className="flex gap-4">
+                    <div className="hidden md:flex gap-4">
                         <a href='#start'>Inicio</a>
                         <a href="">Experiencia</a>
                         <a href="">Proyectos</a>

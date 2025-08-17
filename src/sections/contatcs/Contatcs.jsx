@@ -8,7 +8,7 @@ function Contacts(){
         <>
           <div className="flex flex-col gap-4">
             <TitleSections title={"Contactos"}/>
-          <div className="flex gap-6">
+          <div className="flex flex-col md:flex-row gap-6">
             <Form/>
             <div className="flex flex-col gap-4">
               <FastContacts/>
