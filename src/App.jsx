@@ -12,10 +12,10 @@ function App() {
       <section className="mt-20">
         <Start/>
       </section>
-      <section className="">
+      <section className="w-full">
         <Services/>
       </section>
-      <section className="">
+      <section className="w-full">
         <Contacts/>
       </section>
     </main>
