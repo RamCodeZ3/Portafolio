@@ -5,18 +5,18 @@ function WorkingHours() {
         <span className="text-xl font-semibold">Horarios de atención</span>
 
         <div className="flex justify-between ">
-          <span className="text-[#2e5964]">Lunes-Viernes</span>
-          <b>9:00 - 18:00 UTC</b>
+          <span className="">Lunes-Viernes</span>
+          <b className="text-[#035f78]">9:00 - 18:00 UTC</b>
         </div>
 
         <div className="flex justify-between">
-          <span className="text-[#2e5964]">Sábado</span>
-          <b>10:00 - 16:00 UTC</b>
+          <span className="">Sábado</span>
+          <b className="text-[#035f78]">10:00 - 16:00 UTC</b>
         </div>
 
         <div className="flex justify-between">
-          <span className="text-[#2e5964]">Domingo</span>
-          <span>Cerrado</span>
+          <span className="">Domingo</span>
+          <span className="text-red-600 font-semibold">Cerrado</span>
         </div>
       </div>
     </>

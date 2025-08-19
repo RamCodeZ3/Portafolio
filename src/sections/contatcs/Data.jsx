@@ -21,4 +21,8 @@ const contactsInfo = [
     },
 ]
 
+export const serviceId = 'service_x8baq0i';
+export const templateId = 'template_20k24dc';
+export const publicKey = 'a0aUhR9Iz3cWuxdtR';
+
 export default contactsInfo;
