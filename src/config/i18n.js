@@ -7,18 +7,57 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const resources = {
   es: {
     translation: {
-      welcome: '¡Bienvenido a la página!',
-      changeLanguage: 'Cambiar idioma',
-      home: 'Inicio',
-      about: 'Acerca de',
+     header: {
+        start: 'Inicio',
+        experience: 'Experiencia',
+        projects: 'Proyectos',
+        services: 'Servicios',
+        about: 'Sobre mí',
+        contacts: 'Contactos',
+        changeLanguage: 'Cambiar idioma',
+      },
+     start: {
+        title: "Hola, soy",
+        description: "Soy programador Full-Stack, apasionado por la tecnología, siempre dispuesto a afrontar nuevos desafíos y enfocado en desarrollar proyectos de alta calidad, escalables y profesionales.", 
+     },
+     services: {
+      service1: "Desarrollo Web Full-Stack",
+      description1:"Diseño y desarrollo de aplicaciones web completas, desde la interfaz visual hasta la lógica del servidor. Sitios responsivos, APIs, bases de datos y despliegue en la nube.",
+      service2: "Creación de Bots",
+      description2:"Automatizo tareas y mejoro la interacción en redes sociales, mensajería y plataformas. Desarrollo bots para WhatsApp, Telegram, Discord y sistemas empresariales internos.",
+      service3: "Programación con Python",
+      description3:"Desarrollo programas personalizados y scripts para automatizar procesos, analizar datos y conectar con APIs. Soluciones adaptadas para optimizar el trabajo y mejorar la productividad.",
+      service4: "Web Scraping",
+      description4:"Creo herramientas para extraer, procesar y organizar datos desde la web. Uso Python para scraping avanzado, integración de APIs y automatización de reportes personalizados.",
+     }
     },
   },
+  
   en: {
     translation: {
-      welcome: 'Welcome to the page!',
-      changeLanguage: 'Change language',
-      home: 'Home',
-      about: 'About',
+      header: {
+        start: 'Home',
+        experience: 'Experience',
+        projects: 'Projects',
+        services: 'Services',
+        about: 'About',
+        contacts: 'Contacts',
+        changeLanguage: 'Change language',
+      },
+      start: {
+        title: "Hello, i am",
+        description: "I am a full-stack programmer, passionate about technology, always willing to take on new challenges, and focused on developing high-quality, scalable, and professional projects.", 
+     },
+     services: {
+      service1: "Full-Stack Web Development",
+      description1: "Design and development of complete web applications, from visual interfaces to server-side logic. Responsive websites, APIs, databases, and cloud deployment.",
+      service2: "Bot Creation",
+      description2: "I automate tasks and enhance interaction on social media, messaging, and platforms. I develop bots for WhatsApp, Telegram, Discord, and internal business systems.",
+      service3: "Python Programming",
+      description3: "I create custom programs and scripts to automate processes, analyze data, and connect with APIs. Tailored solutions to optimize work and improve productivity.",
+      service4: "Web Scraping",
+      description4: "I build tools to extract, process, and organize data from the web. I use Python for advanced scraping, API integration, and automation of customized reports.",
+    }
     },
   },
   // Agrega más idiomas según sea necesario

@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import StackTecnology from "./StackTecnology";
 
 function Start(){
     const [statulPerfil, setStatusPerfil] = useState(true)
+    const { t, i18n } = useTranslation();
     
     return(
         <>
@@ -11,12 +13,14 @@ function Start(){
             <div className="flex flex-col lg:flex-row bg-neutral-900/80 w-full items-center gap-12 px-6  lg:px-20 py-5 rounded-lg">
                 <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2 text-3xl md:text-6xl font-bold">
-                    <span>Hola, soy</span>
+                    <span>{t('start.title')}</span>
                     <span class="bg-gradient-to-r from-[#035f78] to-[#121e4e] bg-clip-text text-transparent">
                         Aram Musset
                     </span>
                 </div>
-                <p className="w-full lg:w-140 text-md md:text-lg">Soy programador Full-Stack, apasionado por la tecnología, siempre dispuesto a afrontar nuevos desafíos y enfocado en desarrollar proyectos de alta calidad, escalables y profesionales.</p>
+                <p className="w-full lg:w-140 text-md md:text-lg">
+                    {t('start.description')}
+                </p>
             </div>
             <div className="bg-gradient-to-r from-[#035f78] to-[#121e4e] rounded-full p-2">
                 <div className="p-2 bg-neutral-900/80 rounded-full">

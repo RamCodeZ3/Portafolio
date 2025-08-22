@@ -19,12 +19,12 @@ function Header() {
           <span className="font-bold text-lg">RamCode</span>
         </div>
         <div className="hidden md:flex gap-4">
-          <a href="#start">{t('welcome')}</a>
-          <a href="#">{t('experience')}</a>
-          <a href="#">{t('projects')}</a>
-          <a href="#add">{t('services')}</a>
-          <a href="#">{t('about')}</a>
-          <a href="#start">{t('contacts')}</a>
+          <a href="#start">{t('header.start')}</a>
+          <a href="#">{t('header.experience')}</a>
+          <a href="#">{t('header.projects')}</a>
+          <a href="#add">{t('header.services')}</a>
+          <a href="#">{t('header.about')}</a>
+          <a href="#start">{t('header.contacts')}</a>
         </div>
         <select
           id="language"
