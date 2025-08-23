@@ -4,7 +4,7 @@ import StackTecnology from "./StackTecnology";
 
 function Start(){
     const [statulPerfil, setStatusPerfil] = useState(true)
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     
     return(
         <>

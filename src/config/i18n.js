@@ -21,6 +21,7 @@ const resources = {
         description: "Soy programador Full-Stack, apasionado por la tecnología, siempre dispuesto a afrontar nuevos desafíos y enfocado en desarrollar proyectos de alta calidad, escalables y profesionales.", 
      },
      services: {
+      title: "Servicios",
       service1: "Desarrollo Web Full-Stack",
       description1:"Diseño y desarrollo de aplicaciones web completas, desde la interfaz visual hasta la lógica del servidor. Sitios responsivos, APIs, bases de datos y despliegue en la nube.",
       service2: "Creación de Bots",
@@ -49,6 +50,7 @@ const resources = {
         description: "I am a full-stack programmer, passionate about technology, always willing to take on new challenges, and focused on developing high-quality, scalable, and professional projects.", 
      },
      services: {
+      title: "Services",
       service1: "Full-Stack Web Development",
       description1: "Design and development of complete web applications, from visual interfaces to server-side logic. Responsive websites, APIs, databases, and cloud deployment.",
       service2: "Bot Creation",

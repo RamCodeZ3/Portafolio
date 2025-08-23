@@ -30,10 +30,10 @@ function Header() {
           id="language"
           onChange={changeLanguage}
           value={i18n.language}
-          className="p-2 border rounded-md bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="p-2 rounded-md border-1 border-[#035f78] bg-black/2 backdrop-blur-2xl"
         >
-          <option value="es">Español</option>
-          <option value="en">English</option>
+          <option value="es" className='bg-black/60 backdrop-blur-2xl'>Español</option>
+          <option value="en" className='bg-black/60 backdrop-blur-2xl'>English</option>
         </select>
       </header>
     </div>

@@ -1,11 +1,14 @@
 import services from "./Data"
 import TitleSections from "../../common/TitleSections";
+import { useTranslation } from 'react-i18next';
+
 
 function Services(){
+    const { t } = useTranslation();
     return(
         <>
         <TitleSections
-        title={"Servicios"}
+        title={t('services.title')}
         />
         <div className="flex justify-center items-center">
             <div className="w-[90%] grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-stretch">
@@ -15,9 +18,9 @@ function Services(){
                         <div className="p-2 bg-black/10 backdrop-blur-2xl rounded-lg border-1 border-[#035f78]">
                             {data.icon}
                         </div>
-                        <span className="font-semibold text-xl">{data.title}</span>
+                        <span className="font-semibold text-xl">{t(data.title)}</span>
                     </div>
-                    <span>{data.description}</span>
+                    <span>{t(data.description)}</span>
                 </div>
             ))}
             </div>
