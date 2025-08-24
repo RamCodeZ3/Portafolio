@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Menu, X } from 'lucide-react';
 
 function Header() {
   const { t, i18n } = useTranslation();
+  const [activate, setActivate] = useState(false)
 
   function handleDivClick() {
     window.location.reload();
@@ -35,7 +38,24 @@ function Header() {
           <option value="es" className='bg-black/60 backdrop-blur-2xl'>Español</option>
           <option value="en" className='bg-black/60 backdrop-blur-2xl'>English</option>
         </select>
+          <div className='md:hidden' onClick={()=>{setActivate(!activate)}}>
+                {activate ? <X/>: <Menu/>}
+          </div>
       </header>
+      {activate && (
+          <div className="absolute top-17.5 md:hidden w-[85%] font-semibold flex flex-col gap-3 bg-black/40 backdrop-blur-2xl border-1 border-[#035f78] rounded-b-lg px-2 py-4">
+            <div className='flex gap-12 justify-center'>
+              <a href="#start" className='border-b-1 border-[#035f78]'>{t('header.start')}</a> 
+              <a href="#" className='border-b-1 border-[#035f78]'>{t('header.experience')}</a> 
+              <a href="#" className='border-b-1 border-[#035f78]'>{t('header.projects')}</a> 
+            </div>
+            <div className='flex gap-12 justify-center'>
+              <a href="#add" className='border-b-1 border-[#035f78]'>{t('header.services')}</a> 
+              <a href="#" className='border-b-1 border-[#035f78]'>{t('header.about')}</a> 
+              <a href="#start" className='border-b-1 border-[#035f78]'>{t('header.contacts')}</a>
+            </div>
+          </div>
+        )}
     </div>
   );
 }
