@@ -43,7 +43,7 @@ function Header() {
           </div>
       </header>
       {activate && (
-          <div className="absolute top-17.5 md:hidden w-[85%] font-semibold flex flex-col gap-3 bg-black/40 backdrop-blur-2xl border-1 border-[#035f78] rounded-b-lg px-2 py-4">
+          <div className="absolute top-17.5 md:hidden w-[83%] font-semibold flex flex-col gap-3 bg-black/40 backdrop-blur-2xl border-1 border-[#035f78] rounded-b-lg px-2 py-4">
             <div className='flex gap-12 justify-center'>
               <a href="#start" className='border-b-1 border-[#035f78]'>{t('header.start')}</a> 
               <a href="#" className='border-b-1 border-[#035f78]'>{t('header.experience')}</a> 

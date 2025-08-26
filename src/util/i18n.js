@@ -12,7 +12,7 @@ const resources = {
         experience: 'Experiencia',
         projects: 'Proyectos',
         services: 'Servicios',
-        about: 'Sobre mí',
+        about: 'Sobre',
         contacts: 'Contactos',
         changeLanguage: 'Cambiar idioma',
       },

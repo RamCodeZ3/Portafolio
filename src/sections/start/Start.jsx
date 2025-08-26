@@ -9,10 +9,10 @@ function Start(){
     return(
         <>
         <div className="flex flex-col w-full justify-center items-center">
-            <div className="flex w-[80%] lg:w-full bg-gradient-to-r from-[#035f78] to-[#121e4e] p-0.5 rounded-lg">
-            <div className="flex flex-col lg:flex-row bg-neutral-900/80 w-full items-center gap-12 px-6  lg:px-20 py-5 rounded-lg">
+            <div className="flex w-[100%] lg:w-full bg-gradient-to-r from-[#035f78] to-[#121e4e] md:p-0.5 md:rounded-lg">
+            <div className="flex flex-col lg:flex-row bg-neutral-900/80 w-full items-center gap-12 px-6 lg:px-20 py-5 md:rounded-lg">
                 <div className="flex flex-col gap-4">
-                <div className="flex flex-col gap-2 text-3xl md:text-6xl font-bold">
+                <div className="flex flex-col gap-2 text-6xl font-bold">
                     <span>{t('start.title')}</span>
                     <span class="bg-gradient-to-r from-[#035f78] to-[#121e4e] bg-clip-text text-transparent">
                         Aram Musset
@@ -27,7 +27,7 @@ function Start(){
                     <img 
                      src={statulPerfil? "/perfil.png": "/perfil2.png"} 
                      alt=""
-                     className="rounded-full sm:size-[60%]  lg:size-98 cursor-pointer select-none"
+                     className="rounded-full sm:size-[60%] md:size-89 lg:size-98 cursor-pointer select-none"
                      onClick={()=>{setStatusPerfil(!statulPerfil)}}
                      />
                 </div>
