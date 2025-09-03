@@ -20,6 +20,10 @@ const resources = {
         title: "Hola, soy",
         description: "Soy programador Full-Stack, apasionado por la tecnología, siempre dispuesto a afrontar nuevos desafíos y enfocado en desarrollar proyectos de alta calidad, escalables y profesionales.", 
      },
+     experience: {
+      title: "Experiencia",
+      description1: "Desarrollador web responsable de la creación completa del sitio oficial de la empresa, utilizando React, JavaScript y Tailwind CSS. Me encargué del diseño, desarrollo e implementación, asegurando un resultado moderno, funcional y optimizado para distintos dispositivos.",
+     },
      services: {
       title: "Servicios",
       service1: "Desarrollo Web Full-Stack",
@@ -48,6 +52,10 @@ const resources = {
       start: {
         title: "Hello, i am",
         description: "I am a full-stack programmer, passionate about technology, always willing to take on new challenges, and focused on developing high-quality, scalable, and professional projects.", 
+     },
+     experience: {
+      title: "Experience",
+      description1: "Web developer responsible for the complete creation of the company's official website, using React, JavaScript, and Tailwind CSS. I was responsible for the design, development, and implementation, ensuring a modern, functional, and optimized result for different devices.",
      },
      services: {
       title: "Services",
