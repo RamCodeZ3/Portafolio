@@ -11,7 +11,7 @@ function Experiencie(){
         />
         <div className="flex flex-col w-full justify-center items-center">
             {exp.map(data => (
-                <div className="flex gap-4 w-[90%] bg-black/30 rounded-lg backdrop-blur-2xl h-auto border-1 border-[#035f78]">
+                <div className="card flex gap-4 w-[90%] bg-black/30 h-auto">
                     <img src={data.img} className="size-[30%] rounded-lg rounded-r-none" />
                     <div className="flex flex-col justify-center gap-3 ">
                         <span className="font-bold text-lg text-[#035f78]">{data.client}</span>

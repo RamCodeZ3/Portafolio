@@ -25,7 +25,7 @@ function Start(){
             <div className="bg-gradient-to-r from-[#035f78] to-[#121e4e] rounded-full p-2">
                 <div className="p-2 bg-neutral-900/80 rounded-full">
                     <img 
-                     src={statulPerfil? "/perfil.png": "/perfil2.png"} 
+                     src={statulPerfil? "/perfils/perfil.png": "/perfils/perfil2.png"} 
                      alt=""
                      className="rounded-full sm:size-[60%] md:size-89 lg:size-98 cursor-pointer select-none"
                      onClick={()=>{setStatusPerfil(!statulPerfil)}}

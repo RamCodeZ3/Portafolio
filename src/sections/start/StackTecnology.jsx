@@ -5,7 +5,7 @@ function StackTecnology(){
         <>
         <div className="grid gap-10 grid-cols-3 sm:grid-cols-4 lg:grid-cols-8 md:gap-2 lg:gap-14 w-full justify-around mt-6">
             {technologies.map(data =>(
-                    <div className="flex flex-col justify-center items-center bg-black/10 backdrop-blur-2xl p-2 rounded-lg w-25 border-1 border-[#035f78]">
+                    <div className="card2 flex flex-col justify-center items-center  p-2 w-25">
                         <img
                         src={data.path}
                         className="size-12"

@@ -3,11 +3,11 @@ import contactsInfo from "./Data";
 function FastContacts() {
   return (
     <>
-      <div className="w-full h-full flex flex-col gap-4 p-5  bg-black/10 backdrop-blur-2xl rounded-lg border-1 border-[#035f78]">
+      <div className="card2 w-full h-full flex flex-col gap-4 p-5">
         <b className="text-xl">Contacto Rápido</b>
         {contactsInfo.map((contact, i) => (
           <a key={i} href={contact.link} target="_blank">
-            <div className="flex cursor-pointer gap-2 rounded-md p-2 md:w-80 h-auto borderbg-black/10 backdrop-blur-2xl border-1 border-[#035f78]">
+            <div className="card2 flex cursor-pointer gap-2 rounded-md p-2 md:w-80 h-auto">
               <div className="rounded-lg flex justify-center items-center p-3 border border-[#035f78] bg-black/40 text-">
                 {contact.icon}
               </div>

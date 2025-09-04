@@ -1,7 +1,7 @@
 function WorkingHours() {
   return (
     <>
-      <div className="flex flex-col gap-2 w-auto p-5 bg-black/10 backdrop-blur-2xl rounded-lg border-1 border-[#035f78]">
+      <div className="card2 flex flex-col gap-2 w-auto p-5">
         <span className="text-xl font-semibold">Horarios de atención</span>
 
         <div className="flex justify-between ">

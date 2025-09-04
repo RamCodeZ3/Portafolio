@@ -5,3 +5,15 @@
         @apply text-white
     }
 }
+
+.card {
+    @apply border-1 border-[#035f78] bg-black/40 backdrop-blur-2xl rounded-lg
+}
+
+.card2 {
+    @apply border-1 border-[#035f78] bg-black/10 backdrop-blur-2xl rounded-lg
+}
+
+.input_form{
+    @apply bg-black/10 px-2 py-1.5 backdrop-blur-2xl rounded-md border-1 border-[#035f78]
+}

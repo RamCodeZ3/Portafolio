@@ -29,7 +29,7 @@ function Form() {
   };
 
   return (
-    <div className="flex flex-col gap-3 p-4 w-full bg-black/10 backdrop-blur-2xl rounded-lg border-1 border-[#035f78]">
+    <div className="card2 flex flex-col gap-3 p-4 w-full">
       <div className="flex flex-col gap-1">
         <span className="font-semibold text-2xl">Envíame un mensaje</span>
         <span>Completa el formulario y te responderé lo antes posible</span>
@@ -44,17 +44,17 @@ function Form() {
               name="user_name"  
               placeholder="Tu nombre"
               required
-              className="bg-black/10 px-2 py-1.5 backdrop-blur-2xl rounded-md border-1 border-[#035f78]"
+              className="input_form"
             />
           </div>
           <div className="flex flex-col gap-1 flex-1">
             <label className="font-semibold">Email</label>
             <input
               type="email"
-              name="user_email"   // 👈 importante para EmailJS
+              name="user_email"   
               placeholder="tucorreo@gmail.com"
               required
-              className="bg-black/10 px-2 py-1.5 backdrop-blur-2xl rounded-md border-1 border-[#035f78]"
+              className="input_form"
             />
           </div>
         </div>
@@ -62,9 +62,9 @@ function Form() {
         <div className="flex flex-col gap-1">
           <label className="font-semibold">Servicio</label>
           <select
-            name="service"   // 👈 importante para EmailJS
+            name="service"   
             required
-            className="bg-black/10 px-2 py-1.5 backdrop-blur-2xl rounded-md border-1 border-[#035f78]"
+            className="input_form"
           >
             <option value="">Selecciona un servicio</option>
             <option value="Sitio Web">Sitio Web</option>
@@ -78,10 +78,10 @@ function Form() {
         <div className="flex flex-col gap-1">
           <label className="font-semibold">Mensaje</label>
           <textarea
-            name="message"   // 👈 importante para EmailJS
+            name="message" 
             placeholder="¿Cómo te puedo ayudar?"
             required
-            className="h-30 bg-black/10 px-2 py-1.5 backdrop-blur-2xl rounded-md border-1 border-[#035f78]"
+            className="h-30 input_form"
           />
         </div>
 
