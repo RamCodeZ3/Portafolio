@@ -66,12 +66,12 @@ function Form() {
             required
             className="input_form"
           >
-            <option value="">Selecciona un servicio</option>
-            <option value="Sitio Web">Sitio Web</option>
-            <option value="Bot">Bot</option>
-            <option value="Web Scraping">Web Scraping</option>
-            <option value="Automatización de tareas">Automatización de tareas</option>
-            <option value="Otro">Otro</option>
+            <option value="" className="bg-neutral-800">Selecciona un servicio</option>
+            <option value="Sitio Web" className="bg-neutral-800">Sitio Web</option>
+            <option value="Bot" className="bg-neutral-800">Bot</option>
+            <option value="Web Scraping" className="bg-neutral-800">Web Scraping</option>
+            <option value="Automatización de tareas" className="bg-neutral-800">Automatización de tareas</option>
+            <option value="Otro" className="bg-neutral-800">Otro</option>
           </select>
         </div>
 

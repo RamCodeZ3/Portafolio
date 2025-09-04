@@ -7,8 +7,8 @@ function FastContacts() {
         <b className="text-xl">Contacto Rápido</b>
         {contactsInfo.map((contact, i) => (
           <a key={i} href={contact.link} target="_blank">
-            <div className="card2 flex cursor-pointer gap-2 rounded-md p-2 md:w-80 h-auto">
-              <div className="rounded-lg flex justify-center items-center p-3 border border-[#035f78] bg-black/40 text-">
+            <div className="card2 flex cursor-pointer gap-2 rounded-md p-2 md:w-70 lg:w-80 h-auto">
+              <div className="card flex justify-center items-center p-3">
                 {contact.icon}
               </div>
               <div className="flex flex-col justify-evenly">

@@ -2,7 +2,7 @@ import Header from "./common/Header"
 import Start from "./sections/start/Start"
 import Experiencie from "./sections/experience/Experience"
 import Services from "./sections/programmingServices/Services"
-import Contacts from "./sections/contatcs/Contatcs"
+import Contacts from "./sections/contacts/Contacts"
 
 
 function App() {
