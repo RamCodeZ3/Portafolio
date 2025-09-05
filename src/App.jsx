@@ -2,6 +2,7 @@ import Header from "./common/Header"
 import Start from "./sections/start/Start"
 import Experiencie from "./sections/experience/Experience"
 import Services from "./sections/programmingServices/Services"
+import About from "./sections/about/About"
 import Contacts from "./sections/contacts/Contacts"
 
 
@@ -19,6 +20,9 @@ function App() {
       </section>
       <section className="w-full">
         <Services/>
+      </section>
+      <section className="w-full">
+        <About/>
       </section>
       <section className="w-full">
         <Contacts/>

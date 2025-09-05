@@ -34,7 +34,11 @@ const resources = {
       description3:"Desarrollo programas personalizados y scripts para automatizar procesos, analizar datos y conectar con APIs. Soluciones adaptadas para optimizar el trabajo y mejorar la productividad.",
       service4: "Web Scraping",
       description4:"Creo herramientas para extraer, procesar y organizar datos desde la web. Uso Python para scraping avanzado, integración de APIs y automatización de reportes personalizados.",
-     }
+     },
+     about: {
+      title: "Sobre mi",
+      description: "Soy un programador apasionado por el desarrollo de software, con experiencia en una amplia variedad de proyectos. Creo firmemente en la importancia de seguir principios sólidos y aplicar las mejores prácticas en cada proyecto que emprendo. Mi enfoque se basa en construir soluciones robustas y eficientes, fundamentadas en estándares de calidad y metodologías probadas, siempre buscando la excelencia en todo lo que hago y la satisfacción del cliente.",
+     },
     },
   },
   
@@ -67,7 +71,11 @@ const resources = {
       description3: "I create custom programs and scripts to automate processes, analyze data, and connect with APIs. Tailored solutions to optimize work and improve productivity.",
       service4: "Web Scraping",
       description4: "I build tools to extract, process, and organize data from the web. I use Python for advanced scraping, API integration, and automation of customized reports.",
-    }
+    },
+     about: {
+      title: "About",
+      description: "I am a passionate software development programmer with experience in a wide variety of projects. I firmly believe in the importance of adhering to solid principles and applying best practices in every project I undertake. My approach focuses on building robust and efficient solutions, grounded in quality standards and proven methodologies, always striving for excellence in everything I do and ensuring client satisfaction.",
+     },
     },
   },
   // Agrega más idiomas según sea necesario
