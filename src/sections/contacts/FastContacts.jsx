@@ -1,10 +1,13 @@
 import contactsInfo from "./Data";
+import { useTranslation } from 'react-i18next';
 
 function FastContacts() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="card2 w-full h-full flex flex-col gap-4 p-5">
-        <b className="text-xl">Contacto Rápido</b>
+        <b className="text-xl">{t('contacts.fastTitle')}</b>
         {contactsInfo.map((contact, i) => (
           <a key={i} href={contact.link} target="_blank">
             <div className="card2 flex cursor-pointer gap-2 rounded-md p-2 md:w-70 lg:w-80 h-auto">
@@ -13,7 +16,7 @@ function FastContacts() {
               </div>
               <div className="flex flex-col justify-evenly">
                 <h4 className="font-semibold text-[#035f78]">{contact.socialNetworking}</h4>
-                <span className="text-xs">{contact.description}</span>
+                <span className="text-xs">{t(contact.description)}</span>
               </div>
             </div>
           </a>

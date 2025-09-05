@@ -1,9 +1,11 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from 'react-i18next';
 import { serviceId, templateId, publicKey } from "./Data";
 
 function Form() {
   const form = useRef();
+  const { t } = useTranslation();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -31,18 +33,18 @@ function Form() {
   return (
     <div className="card2 flex flex-col gap-3 p-4 w-full">
       <div className="flex flex-col gap-1">
-        <span className="font-semibold text-2xl">Envíame un mensaje</span>
-        <span>Completa el formulario y te responderé lo antes posible</span>
+        <span className="font-semibold text-2xl">{t('contacts.formTitle')}</span>
+        <span>{t('contacts.formDescription')}</span>
       </div>
 
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
         <div className="flex flex-col md:flex-row gap-3">
           <div className="flex flex-col gap-1 flex-1">
-            <label className="font-semibold">Nombre</label>
+            <label className="font-semibold">{t('contacts.formSpanName')}</label>
             <input
               type="text"
               name="user_name"  
-              placeholder="Tu nombre"
+              placeholder={t('contacts.formInputName')}
               required
               className="input_form"
             />
@@ -52,7 +54,7 @@ function Form() {
             <input
               type="email"
               name="user_email"   
-              placeholder="tucorreo@gmail.com"
+              placeholder="exaple@gmail.com"
               required
               className="input_form"
             />
@@ -60,26 +62,26 @@ function Form() {
         </div>
 
         <div className="flex flex-col gap-1">
-          <label className="font-semibold">Servicio</label>
+          <label className="font-semibold">{t('contacts.formSpanService')}</label>
           <select
             name="service"   
             required
             className="input_form"
           >
-            <option value="" className="bg-neutral-800">Selecciona un servicio</option>
-            <option value="Sitio Web" className="bg-neutral-800">Sitio Web</option>
+            <option value="" className="bg-neutral-800">{t('contacts.formOptionService')}</option>
+            <option value="Sitio Web" className="bg-neutral-800">{t('contacts.formOptionService1')}</option>
             <option value="Bot" className="bg-neutral-800">Bot</option>
             <option value="Web Scraping" className="bg-neutral-800">Web Scraping</option>
-            <option value="Automatización de tareas" className="bg-neutral-800">Automatización de tareas</option>
-            <option value="Otro" className="bg-neutral-800">Otro</option>
+            <option value="Automatización de tareas" className="bg-neutral-800">{t('contacts.formOptionService2')}</option>
+            <option value="Otro" className="bg-neutral-800">{t('contacts.formOptionService3')}</option>
           </select>
         </div>
 
         <div className="flex flex-col gap-1">
-          <label className="font-semibold">Mensaje</label>
+          <label className="font-semibold">{t('contacts.formSpanMessage')}</label>
           <textarea
             name="message" 
-            placeholder="¿Cómo te puedo ayudar?"
+            placeholder={t('contacts.formTextareaMessage')}
             required
             className="h-30 input_form"
           />
@@ -89,7 +91,7 @@ function Form() {
           type="submit"
           className="bg-gradient-to-r from-[#035f78] to-[#121e4e] py-2 font-semibold rounded-lg"
         >
-          Enviar Mensaje
+          {t('contacts.formButton')}
         </button>
       </form>
     </div>
