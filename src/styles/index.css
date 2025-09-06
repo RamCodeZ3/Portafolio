@@ -17,3 +17,7 @@
 .input_form{
     @apply bg-black/10 px-2 py-1.5 backdrop-blur-2xl rounded-md border-1 border-[#035f78]
 }
+
+.text_hover{
+    @apply hover:text-[#035f78] transition-colors duration-300
+}

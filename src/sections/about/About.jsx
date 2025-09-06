@@ -15,8 +15,8 @@ function About(){
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.2 }} 
-                className="card flex items-center justify-center gap-4 w-[90%] py-4 px-0">
-                <div className="w-[68%] text-lg">
+                className="card flex flex-col md:flex-row items-center justify-center gap-4 w-[90%] py-4 px-0">
+                <div className="w-[90%] md:w-[68%] text-lg">
                     <p>{t('about.description')}</p>
                 </div>
                 <img src="perfils/perfil.png" alt="" className="size-60 rounded-full" />

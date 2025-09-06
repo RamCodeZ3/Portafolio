@@ -7,6 +7,7 @@ const technologies = [
   { name: "React", path: "svg/React-Dark.svg" },
   { name: "TailwindCSS", path: "svg/TailwindCSS-Dark.svg" },
   { name: "MySQL", path: "svg/MySQL-Dark.svg" },
+  { name: "Java", path: "svg/Java-Dark.svg" },
 ];
 
 export default technologies;
