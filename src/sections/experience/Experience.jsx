@@ -2,6 +2,7 @@ import { SquareArrowOutUpRight } from 'lucide-react';
 import TitleSections from '../../common/TitleSections';
 import { useTranslation } from 'react-i18next';
 import exp from './Data';
+import { motion } from 'motion/react';
 
 function Experiencie() {
   const { t } = useTranslation();
@@ -17,7 +18,13 @@ function Experiencie() {
       <TitleSections title={t('experience.title')} />
       <div className="flex flex-col w-full justify-center items-center">
         {exp.map((data, index) => (
-          <div key={index} className="flex justify-center items-center w-full">
+          <motion.div 
+            key={index}
+            initial={{ opacity: 0, y: 50, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }} 
+            className="flex justify-center items-center w-full">
             <div className="card flex flex-col md:flex-row gap-4 w-[90%] bg-black/30 h-auto">
               <div
                 className="relative group w-full md:w-[70%] h-full cursor-pointer"
@@ -46,7 +53,7 @@ function Experiencie() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </>

@@ -1,5 +1,6 @@
 import TitleSections from "../../common/TitleSections";
 import { useTranslation } from 'react-i18next';
+import { motion } from "motion/react";
 
 function About(){
     const { t } = useTranslation();
@@ -9,12 +10,17 @@ function About(){
          title={t('about.title')}
          />
         <div className="flex justify-center items-center">
-            <div className="card flex items-center justify-center gap-4 w-[90%] py-4 px-0">
+            <motion.div 
+                initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.2 }} 
+                className="card flex items-center justify-center gap-4 w-[90%] py-4 px-0">
                 <div className="w-[68%] text-lg">
                     <p>{t('about.description')}</p>
                 </div>
                 <img src="perfils/perfil.png" alt="" className="size-60 rounded-full" />
-            </div>
+            </motion.div>
         </div>
         </>
     )
