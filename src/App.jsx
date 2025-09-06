@@ -4,8 +4,7 @@ import Experiencie from "./sections/experience/Experience"
 import Services from "./sections/programmingServices/Services"
 import About from "./sections/about/About"
 import Contacts from "./sections/contacts/Contacts"
-import Footer from "./common/footer"
-
+import Footer from "./common/Footer"
 
 function App() {
 
