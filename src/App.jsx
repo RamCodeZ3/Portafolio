@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <Header/>
-    <main className={`bg-[url(general/fondo.jpg)] bg-center bg-fixed bg-cover bg-no-repeat bg-blend-overlay bg-black/60 relative flex flex-col gap-6 w-full min-h-dvh justify-center items-center `}>
+    <main className={`bg-[url(../../public/general/fondo.jpg)] bg-center bg-fixed bg-cover bg-no-repeat bg-blend-overlay bg-black/60 relative flex flex-col gap-6 w-full min-h-dvh justify-center items-center `}>
       <section id="start" className="mt-20">
         <Start/>
       </section>

@@ -96,7 +96,7 @@ const resources = {
       description4: "I build tools to extract, process, and organize data from the web. I use Python for advanced scraping, API integration, and automation of customized reports.",
     },
      about: {
-      title: "About",
+      title: "About me",
       description: "I am a passionate software development programmer with experience in a wide variety of projects. I firmly believe in the importance of adhering to solid principles and applying best practices in every project I undertake. My approach focuses on building robust and efficient solutions, grounded in quality standards and proven methodologies, always striving for excellence in everything I do and ensuring client satisfaction.",
      },
      contacts: {

@@ -54,7 +54,7 @@ function Form() {
             <input
               type="email"
               name="user_email"   
-              placeholder="exaple@gmail.com"
+              placeholder="example@gmail.com"
               required
               className="input_form"
             />

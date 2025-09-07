@@ -1,17 +1,19 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown} from 'lucide-react';
 
 function Header() {
   const { t, i18n } = useTranslation();
   const [activate, setActivate] = useState(false)
+  const [isDropdownMenuOpen, setIsDropdownMenuOpen] = useState(false)
+  const selectRef = useRef(null)
 
   function handleDivClick() {
     window.location.reload();
   }
 
-  const changeLanguage = (event) => {
-    i18n.changeLanguage(event.target.value); // Cambia el idioma
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language); // Cambia el idioma
   };
 
   return (
@@ -25,15 +27,33 @@ function Header() {
           <a href="#about" className='text_hover'>{t('header.about')}</a>
           <a href="#contacts" className='text_hover'>{t('header.contacts')}</a>
         </div>
-        <select
+        <div className="card pr-1 select-container flex gap-2 w-max items-center relative">
+
+          <div className="card dropdownmenu-custom flex-col gap-2 relative">
+            <div className="select flex gap-2" onClick={() => setIsDropdownMenuOpen(!isDropdownMenuOpen)}>
+              <p>English</p>
+              <div className="select-arrow">
+                <ChevronDown />
+              </div>
+            </div>
+            {isDropdownMenuOpen && (
+              <div className="card options flex flex-col gap-2 absolute z-[100]">
+                <p onClick={() => changeLanguage("es")}>JUN es gay</p>
+                <p onClick={() => changeLanguage("en")}>JUN es droga adicto</p>
+              </div>
+            )}
+          </div>
+          
+          {/* <select
           id="language"
           onChange={changeLanguage}
           value={i18n.language}
-          className="cursor-pointer p-2 rounded-md border-1 border-[#035f78] bg-black/2 backdrop-blur-2xl"
-        >
+          className="appearance-none flex justify-center gap-2 w-max items-center cursor-pointer p-2 rounded-md outline-0 focus:outline-0 border-none"
+        > 
           <option value="es" className='bg-neutral-800'>Español</option>
           <option value="en" className='bg-neutral-800'>English</option>
-        </select>
+        </select> */}
+        </div>
           <div className='md:hidden' onClick={()=>{setActivate(!activate)}}>
                 {activate ? <X/>: <Menu/>}
           </div>
