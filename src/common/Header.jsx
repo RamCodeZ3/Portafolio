@@ -27,32 +27,23 @@ function Header() {
           <a href="#about" className='text_hover'>{t('header.about')}</a>
           <a href="#contacts" className='text_hover'>{t('header.contacts')}</a>
         </div>
-        <div className="card pr-1 select-container flex gap-2 w-max items-center relative">
+        <div className=" pr-1 select-container flex gap-2 w-max items-center relative">
 
           <div className="card dropdownmenu-custom flex-col gap-2 relative">
-            <div className="select flex gap-2" onClick={() => setIsDropdownMenuOpen(!isDropdownMenuOpen)}>
-              <p>English</p>
+            <div className="select flex gap-2 px-2 py-2 font-semibold" onClick={() => setIsDropdownMenuOpen(!isDropdownMenuOpen)}>
+              <p>Idioma</p>
               <div className="select-arrow">
                 <ChevronDown />
               </div>
             </div>
             {isDropdownMenuOpen && (
-              <div className="card options flex flex-col gap-2 absolute z-[100]">
-                <p onClick={() => changeLanguage("es")}>JUN es gay</p>
-                <p onClick={() => changeLanguage("en")}>JUN es droga adicto</p>
+              <div className="card options flex flex-col font-semibold w-full gap-2 px-2 py-1 absolute top-12 z-[100]">
+                <p onClick={() => changeLanguage("es")} className='text_hover'>Español</p>
+                <p onClick={() => changeLanguage("en")} className='text_hover'>Ingles</p>
               </div>
             )}
           </div>
           
-          {/* <select
-          id="language"
-          onChange={changeLanguage}
-          value={i18n.language}
-          className="appearance-none flex justify-center gap-2 w-max items-center cursor-pointer p-2 rounded-md outline-0 focus:outline-0 border-none"
-        > 
-          <option value="es" className='bg-neutral-800'>Español</option>
-          <option value="en" className='bg-neutral-800'>English</option>
-        </select> */}
         </div>
           <div className='md:hidden' onClick={()=>{setActivate(!activate)}}>
                 {activate ? <X/>: <Menu/>}

@@ -10,7 +10,7 @@ function FastContacts() {
         <b className="text-xl">{t('contacts.fastTitle')}</b>
         {contactsInfo.map((contact, i) => (
           <a key={i} href={contact.link} target="_blank">
-            <div className="card2 flex cursor-pointer gap-2 rounded-md p-2 md:w-70 lg:w-80 h-auto">
+            <div className="card2 flex cursor-pointer gap-2 rounded-md hover:scale-103 transition-all duration-300 p-2 md:w-[98%] lg:w-80 h-auto">
               <div className="card flex justify-center items-center p-3">
                 {contact.icon}
               </div>

@@ -37,7 +37,7 @@ const resources = {
      },
      about: {
       title: "Sobre mi",
-      description: "Soy un programador apasionado por el desarrollo de software, con experiencia en una amplia variedad de proyectos. Creo firmemente en la importancia de seguir principios sólidos y aplicar las mejores prácticas en cada proyecto que emprendo. Mi enfoque se basa en construir soluciones robustas y eficientes, fundamentadas en estándares de calidad y metodologías probadas, siempre buscando la excelencia en todo lo que hago y la satisfacción del cliente.",
+      description: "Soy una persona apasionada por el desarrollo de software, con experiencia en una amplia variedad de proyectos. Creo firmemente en la importancia de seguir principios sólidos y aplicar las mejores prácticas en cada proyecto que emprendo. Mi enfoque se basa en construir soluciones robustas y eficientes, fundamentadas en estándares de calidad y metodologías probadas, siempre buscando la excelencia en todo lo que hago y la satisfacción del cliente.",
      },
      contacts: {
       title: "Contactos",
@@ -97,7 +97,7 @@ const resources = {
     },
      about: {
       title: "About me",
-      description: "I am a passionate software development programmer with experience in a wide variety of projects. I firmly believe in the importance of adhering to solid principles and applying best practices in every project I undertake. My approach focuses on building robust and efficient solutions, grounded in quality standards and proven methodologies, always striving for excellence in everything I do and ensuring client satisfaction.",
+      description: "I am a passionate person in developer software with experience in a wide variety of projects. I firmly believe in the importance of adhering to solid principles and applying best practices in every project I undertake. My approach focuses on building robust and efficient solutions, grounded in quality standards and proven methodologies, always striving for excellence in everything I do and ensuring client satisfaction.",
      },
      contacts: {
       title: "Contacts",
