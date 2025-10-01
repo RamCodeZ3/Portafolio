@@ -6,6 +6,13 @@ const exp = [
         client: "OFICODEX",
         link: "https://oficodex.com/"
         
+    },
+    {
+        img: "./screenshot/mineavatar.png",
+        description: "experience.description2",
+        rol: "Full-Stack",
+        client: "MINEAVATAR",
+        link: "https://mineavatar.com/"
     }
 ]
 

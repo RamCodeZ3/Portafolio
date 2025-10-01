@@ -16,7 +16,7 @@ function Experiencie() {
   return (
     <>
       <TitleSections title={t('experience.title')} />
-      <div className="flex flex-col w-full justify-center items-center">
+      <div className="flex flex-col w-full justify-center items-center gap-5">
         {exp.map((data, index) => (
           <motion.div 
             key={index}
@@ -27,14 +27,14 @@ function Experiencie() {
             className="flex justify-center items-center w-full">
             <div className="card flex flex-col md:flex-row gap-4 w-[90%] bg-black/30 h-auto">
               <div
-                className="relative group w-full md:w-[70%] h-full cursor-pointer"
+                className="relative group w-full md:w-[70%] aspect-video cursor-pointer"
                 onClick={() => Openpage(data.link)}
               >
                 {data.img && (
                   <img
                     src={data.img}
                     alt={t(data.description) || 'Project image'}
-                    className="w-full rounded-lg rounded-b-none md:rounded-b-lg md:rounded-r-none h-auto object-cover"
+                    className="w-full rounded-lg rounded-b-lg md:rounded-b-none md:rounded-r-none md:rounded-bl-lg h-auto object-cover"
                     loading="lazy" // Lazy loading para optimización
                   />
                 )}
