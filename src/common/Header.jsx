@@ -18,7 +18,7 @@ function Header() {
 
   return (
     <div className="fixed flex justify-center items-center w-full h-18 z-10 top-0 p-4">
-      <header className="card flex w-[92%] z-10 top-0 left-0 py-2 px-2 items-center justify-around">
+      <header className="card flex w-[92%] max-w-[1600px] z-10 top-0 left-0 py-2 px-2 items-center justify-around">
         <img src="general/RamCodeHeader.png" onClick={handleDivClick} className="cursor-pointer size-[30%] md:size-[11%]" alt="Logo"/>
         <div className="hidden md:flex gap-4">
           <a href="#start" className='text_hover'>{t('header.start')}</a>

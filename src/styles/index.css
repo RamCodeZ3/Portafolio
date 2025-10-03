@@ -22,6 +22,14 @@
     @apply hover:text-[#035f78] transition-colors duration-300 cursor-pointer
 }
 
+.buttonIcon{
+  @apply flex justify-center items-center border-1 border-[#035f78] text-[#035f78] bg-black/10 backdrop-blur-2xl rounded-lg p-2 cursor-pointer
+}
+
+section{
+  @apply max-w-[1600px]
+}
+
 /* select{
     appearance: none;
 } */

@@ -1,12 +1,12 @@
-import { Github, Phone } from "lucide-react"
+import { Mail, Phone } from "lucide-react"
 
 const contactsInfo = [
 
     {
-        socialNetworking: 'Github',
+        socialNetworking: 'Email',
         description: 'contacts.fastDescription1',
-        link: 'https://github.com/RamCodeZ3',
-        icon: <Github size={16}/>,
+        link: 'mailto:arammusset7@gmail.com',
+        icon: <Mail size={16}/>,
     },
     {
         socialNetworking: 'Whatsapp',

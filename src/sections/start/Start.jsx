@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from 'react-i18next';
 import StackTecnology from "./StackTecnology";
+import Buttons from "./Buttons";
 
 function Start(){
     const [statulPerfil, setStatusPerfil] = useState(true)
@@ -21,7 +22,9 @@ function Start(){
                 <p className="w-full lg:w-140 text-md md:text-lg">
                     {t('start.description')}
                 </p>
+                <Buttons/>
             </div>
+            
             <div className="bg-gradient-to-r from-[#035f78] to-[#121e4e] rounded-full p-2">
                 <div className="p-2 bg-neutral-900/80 rounded-full">
                     <img 

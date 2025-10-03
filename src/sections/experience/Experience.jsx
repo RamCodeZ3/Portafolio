@@ -25,9 +25,9 @@ function Experiencie() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }} 
             className="flex justify-center items-center w-full">
-            <div className="card flex flex-col md:flex-row gap-4 w-[90%] bg-black/30 h-auto">
+            <div className="card flex flex-col lg:flex-row gap-4 w-[90%] bg-black/30 h-auto">
               <div
-                className="relative group w-full md:w-[70%] aspect-video cursor-pointer"
+                className="relative group w-full lg:w-[70%] aspect-video cursor-pointer"
                 onClick={() => Openpage(data.link)}
               >
                 {data.img && (
