@@ -6,6 +6,10 @@ const Openpage = (link) => {
     }
   };
 
+const handleClick = () => {
+    alert("Este cv se esta actualizando")
+}
+
 function Buttons(){
     return(
         <>
@@ -16,7 +20,7 @@ function Buttons(){
             <button className='buttonIcon' onClick={() => Openpage('https://www.linkedin.com/in/aram-musset-z3/')}>
                 <Linkedin size={22}/>
             </button>
-            <button className='buttonIcon ' title='cv'>
+            <button className='buttonIcon' title='cv' onClick={handleClick}>
                 <FileText size={22}/>
             </button>
         </div>
