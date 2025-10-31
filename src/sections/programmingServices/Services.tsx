@@ -9,7 +9,7 @@ function Services(){
     return(
         <>
         <TitleSections
-        title={t('services.title')}
+            title={t('services.title')}
         />
         <div className="flex justify-center items-center">
             <div className="w-[90%] grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-stretch">

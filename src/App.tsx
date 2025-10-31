@@ -6,7 +6,7 @@ import About from "./sections/about/About"
 import Contacts from "./sections/contacts/Contacts"
 import Footer from "./common/Footer"
 
-function App() {
+export default function App() {
 
   return (
     <>
@@ -33,4 +33,3 @@ function App() {
   )
 }
 
-export default App

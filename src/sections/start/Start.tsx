@@ -15,7 +15,7 @@ function Start(){
                 <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2 text-6xl font-bold">
                     <span>{t('start.title')}</span>
-                    <span class="bg-gradient-to-r from-[#035f78] to-[#121e4e] bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-[#035f78] to-[#121e4e] bg-clip-text text-transparent">
                         Aram Musset
                     </span>
                 </div>

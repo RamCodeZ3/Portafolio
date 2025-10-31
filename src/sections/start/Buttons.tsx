@@ -1,6 +1,6 @@
 import { Github, Linkedin, FileText} from 'lucide-react';
 
-const Openpage = (link) => {
+const Openpage = (link: string) => {
     if (link) {
       window.open(link, '_blank', 'noopener,noreferrer');
     }

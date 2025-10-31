@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, ChevronDown} from 'lucide-react';
 
-function Header() {
+export default function Header() {
   const { t, i18n } = useTranslation();
   const [activate, setActivate] = useState(false)
   const [isDropdownMenuOpen, setIsDropdownMenuOpen] = useState(false)
@@ -12,7 +12,7 @@ function Header() {
     window.location.reload();
   }
 
-  const changeLanguage = (language) => {
+  const changeLanguage = (language: string) => {
     i18n.changeLanguage(language); // Cambia el idioma
   };
 
@@ -65,5 +65,3 @@ function Header() {
     </div>
   );
 }
-
-export default Header;

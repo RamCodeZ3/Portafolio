@@ -7,7 +7,7 @@ import { motion } from 'motion/react';
 function Experiencie() {
   const { t } = useTranslation();
 
-  const Openpage = (link) => {
+  const Openpage = (link: string) => {
     if (link) {
       window.open(link, '_blank', 'noopener,noreferrer');
     }
