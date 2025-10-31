@@ -4,7 +4,7 @@ interface TitleSectionsProps {
   title: string;
 }
 
-function TitleSections({ title }: TitleSectionsProps) {
+export default function TitleSections({ title }: TitleSectionsProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50, scale: 0.9 }}
@@ -21,5 +21,3 @@ function TitleSections({ title }: TitleSectionsProps) {
     </motion.div>
   );
 }
-
-export default TitleSections;

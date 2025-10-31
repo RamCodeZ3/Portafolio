@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useTranslation } from 'react-i18next';
-import StackTecnology from "./StackTecnology";
-import Buttons from "./Buttons";
+import StackTecnology from "./components/StackTecnology";
+import Buttons from "./components/Buttons";
 
-function Start(){
+export default function Start(){
     const [statulPerfil, setStatusPerfil] = useState(true)
     const { t } = useTranslation();
     
@@ -46,4 +46,3 @@ function Start(){
     )
 }
 
-export default Start;

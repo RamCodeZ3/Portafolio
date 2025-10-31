@@ -1,4 +1,4 @@
-const exp = [
+export const exp = [
     {
         img: "./screenshot/oficodex.png",
         description: "experience.description1",
@@ -15,5 +15,3 @@ const exp = [
         link: "https://mineavatar.com/"
     }
 ]
-
-export default exp;

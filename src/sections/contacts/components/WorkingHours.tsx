@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-function WorkingHours() {
+export default function WorkingHours() {
   const { t } = useTranslation();
 
   return (
@@ -26,5 +26,3 @@ function WorkingHours() {
     </>
   )
 }
-
-export default WorkingHours

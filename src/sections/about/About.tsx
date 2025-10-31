@@ -2,7 +2,7 @@ import TitleSections from "../../common/TitleSections";
 import { useTranslation } from 'react-i18next';
 import { motion } from "motion/react";
 
-function About(){
+export default function About(){
     const { t } = useTranslation();
     return(
         <>
@@ -26,5 +26,3 @@ function About(){
         </>
     )
 }
-
-export default About;

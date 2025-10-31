@@ -1,10 +1,10 @@
 import { SquareArrowOutUpRight } from 'lucide-react';
 import TitleSections from '../../common/TitleSections';
 import { useTranslation } from 'react-i18next';
-import exp from './Data';
+import { exp } from './data/data';
 import { motion } from 'motion/react';
 
-function Experiencie() {
+export default function Experiencie() {
   const { t } = useTranslation();
 
   const Openpage = (link: string) => {
@@ -59,5 +59,3 @@ function Experiencie() {
     </>
   );
 }
-
-export default Experiencie;

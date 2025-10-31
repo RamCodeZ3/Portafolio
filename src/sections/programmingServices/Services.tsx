@@ -1,10 +1,10 @@
-import services from "./Data"
+import services from "./data/data"
 import TitleSections from "../../common/TitleSections";
 import { useTranslation } from 'react-i18next';
 import { motion } from "motion/react";
 
-
-function Services(){
+export default function Services(){
+    
     const { t } = useTranslation();
     return(
         <>
@@ -22,7 +22,7 @@ function Services(){
                     className="card2 flex flex-col h-full justify-center gap-2 p-6">
                     <div className="flex gap-2 items-center text-[#035f78]">
                         <div className="card2 p-2 ">
-                            {data.icon}
+                            <data.icon/>
                         </div>
                         <span className="font-semibold text-xl">{t(data.title)}</span>
                     </div>
@@ -35,4 +35,3 @@ function Services(){
     )
 }
 
-export default Services;

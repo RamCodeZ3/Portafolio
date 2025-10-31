@@ -1,9 +1,9 @@
-import Form from "./Form";
-import FastContacts from "./FastContacts";
-import WorkingHours from "./WorkingHours";
+import Form from "./components/Form";
+import FastContacts from "./components/FastContacts";
+import WorkingHours from "./components/WorkingHours";
 import TitleSections from "../../common/TitleSections";
 
-function Contacts(){
+export default function Contacts(){
     return(
         <>
           <div className="flex flex-col justify-center items-center w-full">
@@ -19,5 +19,3 @@ function Contacts(){
         </>
     )
 }
-
-export default Contacts;
