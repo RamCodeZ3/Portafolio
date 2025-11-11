@@ -12,6 +12,7 @@ interface FormContact {
 
 export default function Form() {
   const { t } = useTranslation();
+  const [activate, setActivate] = useState(false)
 
   const [formData, setFormData] = useState<FormContact>({
     name: "",
@@ -93,22 +94,42 @@ export default function Form() {
 
         <div className="flex flex-col gap-1">
           <label className="font-semibold">{t("contacts.formSpanService")}</label>
-          <select
-            name="service"
-            value={formData.service}
-            onChange={handleChange}
-            required
-            className="input_form"
+          <div 
+            className="card p-2 cursor-pointer"
+            onClick={() => setActivate(!activate)}
           >
-            <option value="">{t("contacts.formOptionService")}</option>
-            <option value="Sitio Web">{t("contacts.formOptionService1")}</option>
-            <option value="Bot">Bot</option>
-            <option value="Web Scraping">Web Scraping</option>
-            <option value="Automatización de tareas">
-              {t("contacts.formOptionService2")}
-            </option>
-            <option value="Otro">{t("contacts.formOptionService3")}</option>
-          </select>
+            {formData.service? formData.service : "Elegir servicio" }
+          </div>
+          {activate && 
+            <div className="absolute flex flex-col gap-2 p-2 border border-[#035f78] rounded-lg top-[58%] md:top-[52%] z-90 bg-black/70 w-[96%]">
+              <span  
+                onClick={() => setFormData((prev) => ({ ...prev, service: 'Sitio Web' }))}
+              >
+                {t("contacts.formOptionService1")}
+              </span>
+              <span  
+                onClick={() => setFormData((prev) => ({ ...prev, service: 'Bot' }))}
+              >
+                Bot
+              </span>
+              <span  
+                onClick={() => setFormData((prev) => ({ ...prev, service: 'Web Scraping' }))}
+              >
+                Web Scraping
+              </span>
+              <span  
+                onClick={() => setFormData((prev) => ({ ...prev, service: 'Automatización de tareas' }))}
+              >
+                {t("contacts.formOptionService2")}
+              </span>
+              <span  
+                onClick={() => setFormData((prev) => ({ ...prev, service: 'Otro' }))}
+              >
+                {t("contacts.formOptionService3")}
+              </span>
+            </div>
+          }
+         
         </div>
 
         <div className="flex flex-col gap-1">
