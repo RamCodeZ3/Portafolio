@@ -2,6 +2,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
 import { serviceId, templateId, publicKey } from "../data/data"
+import { ChevronDown } from "lucide-react";
 
 interface FormContact {
   name: string;
@@ -95,34 +96,40 @@ export default function Form() {
         <div className="flex flex-col gap-1">
           <label className="font-semibold">{t("contacts.formSpanService")}</label>
           <div 
-            className="card p-2 cursor-pointer"
+            className="card p-2 cursor-pointer flex justify-between"
             onClick={() => setActivate(!activate)}
           >
-            {formData.service? formData.service : "Elegir servicio" }
+            {formData.service? formData.service : t("contacts.formOptionService") }
+            <ChevronDown className={`${activate? "rotate-180": ""} transition-all duration-100`}/>
           </div>
           {activate && 
-            <div className="absolute flex flex-col gap-2 p-2 border border-[#035f78] rounded-lg top-[58%] md:top-[52%] z-90 bg-black/70 w-[96%]">
-              <span  
+            <div className={` absolute flex flex-col gap-2 p-2 border border-[#035f78] rounded-lg top-[58%] md:top-[52%] z-90 bg-black/90 w-[96%] font-semibold transition-all duration-300`}>
+              <span
+                className="hover:text-[#035f78] cursor-pointer transition-all duration-200"  
                 onClick={() => setFormData((prev) => ({ ...prev, service: 'Sitio Web' }))}
               >
                 {t("contacts.formOptionService1")}
               </span>
-              <span  
+              <span
+                className="hover:text-[#035f78] cursor-pointer transition-all duration-200"   
                 onClick={() => setFormData((prev) => ({ ...prev, service: 'Bot' }))}
               >
                 Bot
               </span>
-              <span  
+              <span
+                className="hover:text-[#035f78] cursor-pointer transition-all duration-200"   
                 onClick={() => setFormData((prev) => ({ ...prev, service: 'Web Scraping' }))}
               >
                 Web Scraping
               </span>
-              <span  
+              <span
+                className="hover:text-[#035f78] cursor-pointer transition-all duration-200"   
                 onClick={() => setFormData((prev) => ({ ...prev, service: 'Automatización de tareas' }))}
               >
                 {t("contacts.formOptionService2")}
               </span>
-              <span  
+              <span
+                className="hover:text-[#035f78] cursor-pointer transition-all duration-200"   
                 onClick={() => setFormData((prev) => ({ ...prev, service: 'Otro' }))}
               >
                 {t("contacts.formOptionService3")}
