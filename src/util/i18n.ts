@@ -17,7 +17,7 @@ const resources = {
       },
      start: {
         title: "Hola, soy",
-        description: "Soy programador Full-Stack, apasionado por la tecnología, siempre dispuesto a afrontar nuevos desafíos y enfocado en desarrollar proyectos de alta calidad, escalables y profesionales.", 
+        description: "Soy Aram Musset, un apasionado programador Full-Stack, en Republica Dominicana, Santo Domingo Este.", 
      },
      experience: {
       title: "Experiencia",
