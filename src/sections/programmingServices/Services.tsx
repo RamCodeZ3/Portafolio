@@ -12,7 +12,7 @@ export default function Services(){
             title={t('services.title')}
         />
         <div className="flex justify-center items-center">
-            <div className="w-[90%] grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-stretch">
+            <div className="w-[93%] grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-stretch">
             {services.map(data =>(
                 <motion.div
                     initial={{ opacity: 0, y: 50, scale: 0.9 }}
@@ -20,13 +20,13 @@ export default function Services(){
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.2 }} 
                     className="card2 flex flex-col h-full justify-center gap-2 p-6">
-                    <div className="flex gap-2 items-center text-[#035f78]">
-                        <div className="card2 p-2 ">
+                    <div className="flex gap-2 items-center text-[#0091b9]">
+                        <div className="border-1 border-[#0091b9] bg-[#0091b9]/3 rounded-lg p-2 ">
                             <data.icon/>
                         </div>
                         <span className="font-semibold text-xl">{t(data.title)}</span>
                     </div>
-                    <span>{t(data.description)}</span>
+                    <span className="text-neutral-400">{t(data.description)}</span>
                 </motion.div>
             ))}
             </div>

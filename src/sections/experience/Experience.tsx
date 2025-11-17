@@ -3,58 +3,45 @@ import TitleSections from '../../common/TitleSections';
 import { useTranslation } from 'react-i18next';
 import { exp } from './data/data';
 import { motion } from 'motion/react';
+import { useEffect, useState } from 'react';
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Experiencie() {
   const { t } = useTranslation();
+  const [current, setCurrent] = useState(0);
 
-  const Openpage = (link: string) => {
-    if (link) {
-      window.open(link, '_blank', 'noopener,noreferrer');
-    }
+  const handleNext = () => {
+    setCurrent((prev) => (prev < exp.length - 1 ? prev + 1 : 0));
   };
+
+  const handlePrev = () => {
+    setCurrent((prev) => (prev > 0 ? prev - 1 : exp.length - 1));
+  };
+
+  // useEffect(() => {
+  //   const interval = setInterval(handleNext, 6000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <>
       <TitleSections title={t('experience.title')} />
-      <div className="flex flex-col w-full justify-center items-center gap-5">
-        {exp.map((data, index) => (
-          <motion.div 
-            key={index}
-            initial={{ opacity: 0, y: 50, scale: 0.9 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.2 }} 
-            className="flex justify-center items-center w-full">
-            <div className="card flex flex-col lg:flex-row gap-4 w-[90%] bg-black/30 h-auto">
-              <div
-                className="relative group w-full lg:w-[70%] aspect-video cursor-pointer"
-                onClick={() => Openpage(data.link)}
-              >
-                {data.img && (
-                  <img
-                    src={data.img}
-                    alt={t(data.description) || 'Project image'}
-                    className="w-full rounded-lg rounded-b-lg md:rounded-b-none md:rounded-r-none md:rounded-bl-lg h-auto object-cover"
-                    loading="lazy" // Lazy loading para optimización
-                  />
-                )}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                  <div className="bg-black/70 text-white text-sm p-4 rounded-lg shadow-lg flex items-center gap-2">
-                    <SquareArrowOutUpRight size={18} />
-                  </div>
-                </div>
-              </div>
 
-              <div className="flex flex-col justify-center gap-3 px-3 py-2 md:px-0">
-                <span className="font-bold text-lg text-[#035f78]">{data.client}</span>
-                <p className="text-white">{t(data.description)}</p>
-                <div className="flex items-center justify-center px-2 py-1 bg-[#035f78]/30 rounded-lg w-20">
-                  <span className="w-auto text-sm">{data.rol}</span>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        ))}
+      <div className="relative flex w-full justify-center items-center">
+
+        <motion.div
+          key={current} 
+          initial={{ opacity: 0, scale: 0.9, y: 40 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="w-[90%] md:w-[93%] h-120 rounded-xl overflow-hidden shadow-lg border-2 border-[#0091b9]"
+        >
+          <img
+            src={exp[current].img}
+            className="w-full h-full object-cover "
+          />
+        </motion.div>
+
       </div>
     </>
   );

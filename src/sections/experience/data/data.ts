@@ -1,17 +1,21 @@
 export const exp = [
     {
-        img: "./screenshot/oficodex.png",
+        img: "./screenshot/oficodex.webp",
         description: "experience.description1",
         rol: "Frontend",
         client: "OFICODEX",
-        link: "https://oficodex.com/"
         
     },
     {
-        img: "./screenshot/mineavatar.png",
+        img: "./screenshot/mineavatar.webp",
         description: "experience.description2",
         rol: "Full-Stack",
         client: "MINEAVATAR",
-        link: "https://mineavatar.com/"
+    },
+    {
+        img: "./screenshot/willcar.webp",
+        description: "experience.description2",
+        rol: "Full-Stack",
+        client: "WillCar",
     }
 ]

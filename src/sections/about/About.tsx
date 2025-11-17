@@ -19,7 +19,7 @@ export default function About(){
                 <img src="general/coding.png" alt="" className="w-[90%] md:w-65 h-auto rounded-lg border-1 border-[#035f78]" />
                 <div className="w-[90%] md:w-[68%] text-lg">
                     
-                    <p>{t('about.description')}</p>
+                    <p className="text-neutral-400">{t('about.description')}</p>
                 </div>
             </motion.div>
         </div>

@@ -11,7 +11,7 @@ export default function App() {
   return (
     <>
     <Header/>
-    <main className={`bg-[#121212] relative flex flex-col gap-8 w-full min-h-dvh justify-center items-center `}>
+    <main className={`bg-[#121212] relative flex flex-col gap-2 w-full min-h-dvh justify-center items-center `}>
       <section id="start" className="mt-22">
         <Start/>
       </section>
