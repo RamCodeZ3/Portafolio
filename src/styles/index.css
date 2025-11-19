@@ -7,15 +7,15 @@
 }
 
 .card {
-    @apply border-1 border-[#0091b9] bg-[#0091b9]/3 rounded-lg
+    @apply border-1 border-white/10 bg-[#0091b9]/3 rounded-lg
 }
 
 .card2 {
-    @apply border-1 border-[#0091b9] bg-[#0091b9]/3 backdrop-blur-2xl rounded-2xl
+    @apply border-1 border-white/10 bg-[#0091b9]/3 backdrop-blur-2xl rounded-2xl
 }
 
 .input_form{
-    @apply bg-[#0091b9]/3 px-2 py-1.5 backdrop-blur-2xl rounded-md border-1 border-[#0091b9]
+    @apply bg-[#0091b9]/3 p-2 backdrop-blur-2xl rounded-lg border-1 border-white/10 focus:outline-2 focus:outline-offset-2 focus:outline-[#0091b9]
 }
 
 .text_hover{
@@ -33,6 +33,11 @@ section{
 /* select{
     appearance: none;
 } */
+
+::selection {
+  background-color: #048db3;
+  color: white;
+}
 
 ::-webkit-scrollbar {
   width: 12px;

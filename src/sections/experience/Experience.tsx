@@ -34,7 +34,7 @@ export default function Experiencie() {
           initial={{ opacity: 0, scale: 0.9, y: 40 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="w-[90%] md:w-[93%] h-120 rounded-xl overflow-hidden shadow-lg border-2 border-[#0091b9]"
+          className="w-[90%] md:w-[93%] h-120 rounded-xl overflow-hidden shadow-lg border-1 border-white/10"
         >
           <img
             src={exp[current].img}

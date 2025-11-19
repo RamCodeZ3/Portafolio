@@ -9,7 +9,7 @@ export default function Start(){
     return(
         <>
         <div className="flex w-full md:p-0.5 md:rounded-lg">
-            <div className="flex flex-col bg-neutral-900/40 md:bg-neutral-900/80 w-full items-center gap-5 px-6 lg:px-20 py-5 md:rounded-lg">
+            <div className="flex flex-col bg-neutral-900/40 md:bg-neutral-900 border border-white/10 w-full items-center gap-5 px-6 lg:px-20 py-5 md:rounded-lg">
                 <div className="flex items-center gap-30">
                     <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2 text-6xl font-bold">

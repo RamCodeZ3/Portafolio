@@ -9,7 +9,7 @@ export default function StackTecnology(){
                 {technologies.map(data =>(    
                 <img
                     src={data}
-                    className="size-11"
+                    className="size-11 select-none"
                 />
             ))}
             </div>

@@ -13,10 +13,12 @@ export default function TitleSections({ title }: TitleSectionsProps) {
       viewport={{ once: true, amount: 0.2 }}
       className="flex justify-center items-center w-full h-auto my-8"
     >
-      <div className="flex justify-center w-[90%] backdrop-blur-2xl p-2 ">
-        <span className="font-bold text-4xl text-[#0091b9]">
+      <div className="flex justify-between w-[93%] backdrop-blur-2xl border border-white/10 bg-[#0091b9]/2 rounded-lg">
+        <div className=" bg-[#0091b9] w-1.5 rounded-l-2xl"></div>
+        <span className="font-bold text-4xl text-[#0091b9] py-2">
           {title}
         </span>
+        <div className="bg-[#0091b9] w-1.5 rounded-r-2xl"></div>
       </div>
     </motion.div>
   );

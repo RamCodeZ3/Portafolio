@@ -15,11 +15,13 @@ export default function About(){
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.2 }} 
-                className="card flex flex-col md:flex-row items-center justify-center gap-4 w-[90%] py-4 px-0">
-                <img src="general/coding.png" alt="" className="w-[90%] md:w-65 h-auto rounded-lg border-1 border-[#035f78]" />
-                <div className="w-[90%] md:w-[68%] text-lg">
+                className="flex flex-col md:flex-row items-center justify-between gap-4 w-[93%] p-4 bg-[#0091b9]/3 rounded-2xl border border-white/10">
+                <div className="w-[60%] h-70 rounded-2xl border border-white/10 ">
+                    <img src="general/coding.png" alt="" className="w-full h-full object-cover rounded-2xl select-none" />
+                </div>
+                <div className="w-[9%] md:w-[68%] text-lg">
                     
-                    <p className="text-neutral-400">{t('about.description')}</p>
+                    <p className="text-neutral-400 w-170 leading-10">{t('about.description')}</p>
                 </div>
             </motion.div>
         </div>
