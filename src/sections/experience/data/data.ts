@@ -13,5 +13,12 @@ export const exp = [
         rol: "Full-Stack",
         client: "MINEAVATAR",
         link: "https://mineavatar.com/"
+    },
+     {
+        img: "./screenshot/willcar.webp",
+        description: "experience.description3",
+        rol: "Full-Stack",
+        client: "WillCard",
+        link: "https://mineavatar.com/"
     }
 ]

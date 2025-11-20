@@ -26,24 +26,12 @@ export default function Experiencie() {
             viewport={{ once: true, amount: 0.2 }} 
             className="flex justify-center items-center w-full">
             <div className="card flex flex-col lg:flex-row gap-4 w-[90%] bg-black/30 h-auto">
-              <div
-                className="relative group w-full lg:w-[70%] aspect-video cursor-pointer"
-                onClick={() => Openpage(data.link)}
-              >
-                {data.img && (
-                  <img
+              <img
                     src={data.img}
                     alt={t(data.description) || 'Project image'}
-                    className="w-full rounded-lg rounded-b-lg md:rounded-b-none md:rounded-r-none md:rounded-bl-lg h-auto object-cover"
+                    className=" w-full lg:w-[32%] rounded-lg rounded-b-lg md:rounded-b-none md:rounded-r-none md:rounded-bl-lg h-full object-cover"
                     loading="lazy" // Lazy loading para optimización
                   />
-                )}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                  <div className="bg-black/70 text-white text-sm p-4 rounded-lg shadow-lg flex items-center gap-2">
-                    <SquareArrowOutUpRight size={18} />
-                  </div>
-                </div>
-              </div>
 
               <div className="flex flex-col justify-center gap-3 px-3 py-2 md:px-0">
                 <span className="font-bold text-lg text-[#035f78]">{data.client}</span>

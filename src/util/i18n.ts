@@ -22,7 +22,8 @@ const resources = {
      experience: {
       title: "Experiencia",
       description1: "Desarrollador web responsable de la creación completa del sitio oficial de la empresa, utilizando React, JavaScript y Tailwind CSS. Me encargué del diseño, desarrollo e implementación, asegurando un resultado moderno, funcional y optimizado para distintos dispositivos.",
-      description2: "Desarrollador web responsable de la creación de un clon de NameMC con catálogo en tiempo real de skins y capas. Me encargué del diseño e implementación, integrando renderizado 3D, búsquedas optimizadas y funciones sociales para una experiencia interactiva y escalable."
+      description2: "Desarrollador web responsable de la creación de un clon de NameMC con catálogo en tiempo real de skins y capas. Me encargué del diseño e implementación, integrando renderizado 3D, búsquedas optimizadas y funciones sociales para una experiencia interactiva y escalable.",
+      description3: "Colaboré como desarrollador full-stack en un proyecto de alquiler de vehículos en Bucaramanga, creando la interfaz de ofertas, nosotros y catálogo, además de formularios administrativos y servicios conectados a la base de datos para gestión eficiente."
      },
      services: {
       title: "Servicios",
@@ -83,7 +84,8 @@ const resources = {
      experience: {
       title: "Experience",
       description1: "Web developer responsible for the complete creation of the company's official website, using React, JavaScript, and Tailwind CSS. I was responsible for the design, development, and implementation, ensuring a modern, functional, and optimized result for different devices.",
-      description2: "Web developer responsible for creating a NameMC clone with a real-time catalog of skins and capes. I handled the design and implementation, integrating 3D rendering, optimized searches for name and UUID, and social features for an interactive and scalable experience."
+      description2: "Web developer responsible for creating a NameMC clone with a real-time catalog of skins and capes. I handled the design and implementation, integrating 3D rendering, optimized searches for name and UUID, and social features for an interactive and scalable experience.",
+      description3: "I collaborated as a full-stack developer on a vehicle rental project in Bucaramanga, creating the interface for offers, about us, and the catalog, as well as administrative forms and database-connected services to ensure efficient management throughout the platform."
      },
      services: {
       title: "Services",
