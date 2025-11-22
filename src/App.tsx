@@ -5,13 +5,15 @@ import Services from "./sections/programmingServices/Services"
 import About from "./sections/about/About"
 import Contacts from "./sections/contacts/Contacts"
 import Footer from "./common/Footer"
+import Animation from "./sections/animation/Animation"
 
 export default function App() {
 
   return (
     <>
+    <Animation/>
     <Header/>
-    <main className={`bg-[#121212] relative flex flex-col gap-2 w-full min-h-dvh justify-center items-center `}>
+    <main className={`bg-[#121212] relative flex flex-col gap-2 w-full min-h-dvh justify-center items-center`}>
       <section id="start" className="mt-22">
         <Start/>
       </section>
