@@ -9,7 +9,7 @@ const technologies = [
   "svg/TailwindCSS-Dark.svg",
   "svg/Java-Dark.svg",
   "svg/MySQL-Dark.svg",
-  "svg/PostgreSQL.svg"
+  "svg/PostgreSQL.svg",
 ];
 
 export default technologies;
