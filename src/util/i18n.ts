@@ -79,7 +79,7 @@ const resources = {
       },
       start: {
         title: "Hello, I am",
-        description: "I am a full-stack programmer, passionate about technology, always willing to take on new challenges, and focused on developing high-quality, scalable, and professional projects.", 
+        description: "I'm Aram Musset, a passionate developer Full-Stack, in Dominican Republic Santo Domingo Este.", 
      },
      experience: {
       title: "Experience",

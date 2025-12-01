@@ -29,7 +29,7 @@ export default function App() {
 
       <div className={`${active ? "opacity-100" : "opacity-0"} transition-opacity duration-700`}>
         <Header />
-        <main className="bg-[#121212] relative flex flex-col gap-2 w-full min-h-dvh justify-center items-center">
+        <main className="bg-[#121212] relative flex flex-col gap-2 w-full min-h-dvh justify-center items-center overflow-x-hidden">
           <section id="start" className="mt-22">
             <Start />
           </section>

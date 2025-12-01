@@ -55,15 +55,15 @@ export default function Header() {
           </div>
       </header>
       {activate && (
-          <div className="absolute top-17.5 md:hidden w-[83%] font-semibold flex flex-col gap-3 bg-black/40 backdrop-blur-2xl border-1 border-[#035f78] rounded-b-lg px-2 py-4">
+          <div className="absolute top-20.5 md:hidden w-[93%] py-5 font-semibold flex flex-col gap-3 card2">
             <div className='flex gap-12 justify-center'>
-              <a href="#start" className='border-b-1 border-[#035f78]'>{t('header.start')}</a> 
-              <a href="#exp" className='border-b-1 border-[#035f78]'>{t('header.experience')}</a>
-              <a href="#services" className='border-b-1 border-[#035f78]'>{t('header.services')}</a> 
+              <a href="#start" className='border-b-1 border-[#0091b9]'>{t('header.start')}</a> 
+              <a href="#exp" className='border-b-1 border-[#0091b9]'>{t('header.experience')}</a>
+              <a href="#services" className='border-b-1 border-[#0091b9]'>{t('header.services')}</a> 
             </div>
             <div className='flex gap-12 justify-center'>
-              <a href="#about" className='border-b-1 border-[#035f78]'>{t('header.about')}</a> 
-              <a href="#contacts" className='border-b-1 border-[#035f78]'>{t('header.contacts')}</a>
+              <a href="#about" className='border-b-1 border-[#0091b9]'>{t('header.about')}</a> 
+              <a href="#contacts" className='border-b-1 border-[#0091b9]'>{t('header.contacts')}</a>
             </div>
           </div>
         )}
