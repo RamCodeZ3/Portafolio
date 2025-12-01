@@ -2,7 +2,7 @@
 
 @layer base {
     body{
-        @apply text-white
+        @apply text-white bg-[#121212]
     }
 }
 
@@ -57,4 +57,9 @@ section{
 
 ::-webkit-scrollbar-track {
   background-color: #000;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
 }

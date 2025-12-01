@@ -12,7 +12,7 @@ export const exp = [
         description: "experience.description2",
         rol: "Full-Stack Developer",
         client: "MINEAVATAR",
-        tech: ["svg/JavaScript.svg", "svg/CSS.svg", "svg/PHP-Dark.svg", "svg/MySQL-Dark.svg"],
+        tech: ["svg/JavaScript.svg", "svg/HTML.svg", "svg/CSS.svg", "svg/PHP-Dark.svg", "svg/MySQL-Dark.svg"],
     },
     {
         img: "./screenshot/willcar.webp",

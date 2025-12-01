@@ -27,7 +27,7 @@ export default function Experiencie() {
             <div className='flex gap-2'>
               <img
                 src={data.img}
-                className='w-[40%] h-full rounded-2xl border-white/10'
+                className='w-[40%] h-full rounded-2xl border-white/10 select-none'
               />
               <div className='flex flex-col justify-around card2 px-3'>
                 <div className='flex flex-col'>
