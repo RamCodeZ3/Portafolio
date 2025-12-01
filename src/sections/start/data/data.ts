@@ -1,15 +1,15 @@
 const technologies = [
-  { name: "Python", path: "svg/Python-Dark.svg" },
-  { name: "Django", path: "svg/Django.svg" },
-  { name: "JavaScript", path: "svg/JavaScript.svg"},
-  { name: "TypeScript", path: "svg/TypeScript.svg"},
-  { name: "HTML", path: "svg/HTML.svg" },
-  { name: "CSS", path: "svg/CSS.svg" },
-  { name: "React", path: "svg/React-Dark.svg" },
-  { name: "TailwindCSS", path: "svg/TailwindCSS-Dark.svg" },
-  { name: "Java", path: "svg/Java-Dark.svg" },
-  { name: "MySQL", path: "svg/MySQL-Dark.svg" },
-  { name: "PostgresSql", path: "svg/PostgreSQL.svg" },
+  "svg/Python-Dark.svg",
+  "svg/Django.svg",
+  "svg/JavaScript.svg",
+  "svg/TypeScript.svg",
+  "svg/HTML.svg",
+  "svg/CSS.svg",
+  "svg/React-Dark.svg",
+  "svg/TailwindCSS-Dark.svg",
+  "svg/Java-Dark.svg",
+  "svg/MySQL-Dark.svg",
+  "svg/PostgreSQL.svg",
 ];
 
 export default technologies;

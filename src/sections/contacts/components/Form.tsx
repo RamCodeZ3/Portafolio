@@ -2,7 +2,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
 import { serviceId, templateId, publicKey } from "../data/data"
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, User, Mail, MonitorCog, MessageCircleMore } from "lucide-react";
 
 interface FormContact {
   name: string;
@@ -60,14 +60,17 @@ export default function Form() {
   return (
     <div className="card2 flex flex-col gap-3 p-4 w-full">
       <div className="flex flex-col gap-1">
-        <span className="font-semibold text-2xl">{t("contacts.formTitle")}</span>
+        <span className="font-semibold text-2xl text-[#0091b9]">{t("contacts.formTitle")}</span>
         <span>{t("contacts.formDescription")}</span>
       </div>
 
       <form onSubmit={sendEmail} className="flex flex-col gap-4">
         <div className="flex flex-col md:flex-row gap-3">
           <div className="flex flex-col gap-1 flex-1">
-            <label className="font-semibold">{t("contacts.formSpanName")}</label>
+            <div className="flex gap-1.5 items-center">
+              <User size={16}/>
+              <label className="font-semibold">{t("contacts.formSpanName")}</label>
+            </div>
             <input
               type="text"
               name="name"
@@ -80,7 +83,10 @@ export default function Form() {
           </div>
 
           <div className="flex flex-col gap-1 flex-1">
-            <label className="font-semibold">Email</label>
+             <div className="flex gap-1.5 items-center">
+              <Mail size={16}/>
+              <label className="font-semibold">Email</label>
+            </div>
             <input
               type="email"
               name="email"
@@ -94,42 +100,45 @@ export default function Form() {
         </div>
 
         <div className="flex flex-col gap-1">
-          <label className="font-semibold">{t("contacts.formSpanService")}</label>
+           <div className="flex gap-1.5 items-center">
+              <MonitorCog size={16}/>
+              <label className="font-semibold">{t("contacts.formSpanService")}</label>
+            </div>
           <div 
-            className="card p-2 cursor-pointer flex justify-between"
+            className="input_form p-2 cursor-pointer flex justify-between"
             onClick={() => setActivate(!activate)}
           >
             {formData.service? formData.service : t("contacts.formOptionService") }
             <ChevronDown className={`${activate? "rotate-180": ""} transition-all duration-100`}/>
           </div>
           {activate && 
-            <div className={` absolute flex flex-col gap-2 p-2 border border-[#035f78] rounded-lg top-[58%] md:top-[52%] z-90 bg-black/90 w-[96%] font-semibold transition-all duration-300`}>
+            <div className={` absolute flex flex-col gap-2 p-2 border border-[#0091b9] rounded-lg top-[58%] md:top-[52%] z-90 bg-neutral-900 w-[96%] font-semibold transition-all duration-300`}>
               <span
-                className="hover:text-[#035f78] cursor-pointer transition-all duration-200"  
+                className="hover:text-[#0091b9] cursor-pointer transition-all duration-200"  
                 onClick={() => setFormData((prev) => ({ ...prev, service: 'Sitio Web' }))}
               >
                 {t("contacts.formOptionService1")}
               </span>
               <span
-                className="hover:text-[#035f78] cursor-pointer transition-all duration-200"   
+                className="hover:text-[#0091b9] cursor-pointer transition-all duration-200"   
                 onClick={() => setFormData((prev) => ({ ...prev, service: 'Bot' }))}
               >
                 Bot
               </span>
               <span
-                className="hover:text-[#035f78] cursor-pointer transition-all duration-200"   
+                className="hover:text-[#0091b9] cursor-pointer transition-all duration-200"   
                 onClick={() => setFormData((prev) => ({ ...prev, service: 'Web Scraping' }))}
               >
                 Web Scraping
               </span>
               <span
-                className="hover:text-[#035f78] cursor-pointer transition-all duration-200"   
+                className="hover:text-[#0091b9] cursor-pointer transition-all duration-200"   
                 onClick={() => setFormData((prev) => ({ ...prev, service: 'Automatización de tareas' }))}
               >
                 {t("contacts.formOptionService2")}
               </span>
               <span
-                className="hover:text-[#035f78] cursor-pointer transition-all duration-200"   
+                className="hover:text-[#0091b9] cursor-pointer transition-all duration-200"   
                 onClick={() => setFormData((prev) => ({ ...prev, service: 'Otro' }))}
               >
                 {t("contacts.formOptionService3")}
@@ -140,7 +149,10 @@ export default function Form() {
         </div>
 
         <div className="flex flex-col gap-1">
-          <label className="font-semibold">{t("contacts.formSpanMessage")}</label>
+           <div className="flex gap-1.5 items-center">
+              <MessageCircleMore size={16}/>
+              <label className="font-semibold">{t("contacts.formSpanMessage")}</label>
+            </div>
           <textarea
             name="message"
             value={formData.message}
@@ -153,7 +165,7 @@ export default function Form() {
 
         <button
           type="submit"
-          className="bg-gradient-to-r from-[#035f78] to-[#121e4e] py-2 font-semibold rounded-lg"
+          className="bg-gradient-to-r text-white from-[#0091b9] to-[#121e4e] py-2 font-semibold rounded-lg"
         >
           {t("contacts.formButton")}
         </button>

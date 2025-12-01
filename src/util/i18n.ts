@@ -17,13 +17,13 @@ const resources = {
       },
      start: {
         title: "Hola, soy",
-        description: "Soy programador Full-Stack, apasionado por la tecnología, siempre dispuesto a afrontar nuevos desafíos y enfocado en desarrollar proyectos de alta calidad, escalables y profesionales.", 
+        description: "Soy Aram Musset, un apasionado programador Full-Stack, en Republica Dominicana, Santo Domingo Este.", 
      },
      experience: {
       title: "Experiencia",
       description1: "Desarrollador web responsable de la creación completa del sitio oficial de la empresa, utilizando React, JavaScript y Tailwind CSS. Me encargué del diseño, desarrollo e implementación, asegurando un resultado moderno, funcional y optimizado para distintos dispositivos.",
       description2: "Desarrollador web responsable de la creación de un clon de NameMC con catálogo en tiempo real de skins y capas. Me encargué del diseño e implementación, integrando renderizado 3D, búsquedas optimizadas y funciones sociales para una experiencia interactiva y escalable.",
-      description3: "Colaboré como desarrollador full-stack en un proyecto de alquiler de vehículos en Bucaramanga, creando la interfaz de ofertas, nosotros y catálogo, además de formularios administrativos y servicios conectados a la base de datos para gestión eficiente."
+      description3: "Colaboré como desarrollador full-stack en un proyecto de alquiler de vehículos en Bucaramanga, creando la interfaz de ofertas, nosotros y catálogo, además de formularios administrativos y servicios conectados a la base de datos para gestión eficiente.",
      },
      services: {
       title: "Servicios",
@@ -79,7 +79,7 @@ const resources = {
       },
       start: {
         title: "Hello, I am",
-        description: "I am a full-stack programmer, passionate about technology, always willing to take on new challenges, and focused on developing high-quality, scalable, and professional projects.", 
+        description: "I'm Aram Musset, a passionate developer Full-Stack, in Dominican Republic Santo Domingo Este.", 
      },
      experience: {
       title: "Experience",

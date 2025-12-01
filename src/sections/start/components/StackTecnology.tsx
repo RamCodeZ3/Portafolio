@@ -3,16 +3,16 @@ import technologies from "../data/data"
 export default function StackTecnology(){
     return(
         <>
-        <div className="grid gap-6 grid-cols-3 sm:grid-cols-4 lg:grid-cols-11 md:gap-x-5 lg:gap-1.5 w-full justify-around mt-6">
-            {technologies.map(data =>(
-                    <div className="card2 flex flex-col justify-center items-center px-1 py-2 w-25">
-                        <img
-                            src={data.path}
-                            className="size-10"
-                        />
-                        <span className="font-semibold text-sm">{data.name}</span>
-                    </div>
+        <div className="hidden md:flex gap-4 items-center w-full mt-3">
+            <span className="text-xl font-semibold pr-3 border-r-2">Tech Stack</span>
+            <div className="flex flex-wrap gap-4">
+                {technologies.map(data =>(    
+                <img
+                    src={data}
+                    className="size-11 select-none"
+                />
             ))}
+            </div>
         </div>
         </>
     )

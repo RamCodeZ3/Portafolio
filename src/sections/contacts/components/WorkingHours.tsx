@@ -6,16 +6,16 @@ export default function WorkingHours() {
   return (
     <>
       <div className="card2 flex flex-col gap-2 w-auto p-5">
-        <span className="text-xl font-semibold">{t('contacts.workingTitle')}</span>
+        <span className="text-xl font-semibold text-[#0091b9]">{t('contacts.workingTitle')}</span>
 
         <div className="flex justify-between ">
           <span className="">{t('contacts.workingDays')}</span>
-          <b className="text-[#035f78]">9:00 - 18:00 UTC</b>
+          <b className="text-[#0091b9]">9:00 - 16:00 UTC</b>
         </div>
 
         <div className="flex justify-between">
           <span className="">{t('contacts.workingDay1')}</span>
-          <b className="text-[#035f78]">10:00 - 16:00 UTC</b>
+          <b className="text-[#0091b9]">10:00 - 16:00 UTC</b>
         </div>
 
         <div className="flex justify-between">

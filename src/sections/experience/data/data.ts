@@ -4,21 +4,21 @@ export const exp = [
         description: "experience.description1",
         rol: "Frontend",
         client: "OFICODEX",
-        link: "https://oficodex.com/"
+        tech: ["svg/JavaScript.svg", "svg/React-Dark.svg", "svg/TailwindCSS-Dark.svg"],
         
     },
     {
-        img: "./screenshot/mineavatar.png",
+        img: "./screenshot/mineavatar.webp",
         description: "experience.description2",
-        rol: "Full-Stack",
+        rol: "Full-Stack Developer",
         client: "MINEAVATAR",
-        link: "https://mineavatar.com/"
+        tech: ["svg/JavaScript.svg", "svg/HTML.svg", "svg/CSS.svg", "svg/PHP-Dark.svg", "svg/MySQL-Dark.svg"],
     },
-     {
+    {
         img: "./screenshot/willcar.webp",
         description: "experience.description3",
-        rol: "Full-Stack",
-        client: "WillCard",
-        link: "https://mineavatar.com/"
+        rol: "Full-Stack Developer",
+        client: "WillCar",
+        tech: ["svg/TypeScript.svg", "svg/React-Dark.svg", "svg/TailwindCSS-Dark.svg", "svg/Supabase-Dark.svg", "svg/PostgreSQL.svg" ],
     }
 ]

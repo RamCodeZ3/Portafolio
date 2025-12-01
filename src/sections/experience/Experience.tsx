@@ -1,48 +1,81 @@
-import { SquareArrowOutUpRight } from 'lucide-react';
-import TitleSections from '../../common/TitleSections';
 import { useTranslation } from 'react-i18next';
+import { useEffect, useRef } from 'react';
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import TitleSections from '../../common/TitleSections';
 import { exp } from './data/data';
-import { motion } from 'motion/react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Experiencie() {
   const { t } = useTranslation();
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  const Openpage = (link: string) => {
-    if (link) {
-      window.open(link, '_blank', 'noopener,noreferrer');
-    }
-  };
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const items = container.querySelectorAll(".exp-item");
+
+    gsap.fromTo(
+      items,
+      { opacity: 0, y: 40, scale: 0.95 },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.6,
+        ease: "power3.out",
+        stagger: 0.15,
+        scrollTrigger: {
+          trigger: container,
+          start: "top 80%",
+          once: true,
+        },
+      }
+    );
+  }, []);
 
   return (
     <>
       <TitleSections title={t('experience.title')} />
-      <div className="flex flex-col w-full justify-center items-center gap-5">
-        {exp.map((data, index) => (
-          <motion.div 
-            key={index}
-            initial={{ opacity: 0, y: 50, scale: 0.9 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.2 }} 
-            className="flex justify-center items-center w-full">
-            <div className="card flex flex-col lg:flex-row gap-4 w-[90%] bg-black/30 h-auto">
-              <img
-                    src={data.img}
-                    alt={t(data.description) || 'Project image'}
-                    className=" w-full lg:w-[32%] rounded-lg rounded-b-lg md:rounded-b-none md:rounded-r-none md:rounded-bl-lg h-full object-cover"
-                    loading="lazy" // Lazy loading para optimización
-                  />
 
-              <div className="flex flex-col justify-center gap-3 px-3 py-2 md:px-0">
-                <span className="font-bold text-lg text-[#035f78]">{data.client}</span>
-                <p className="text-white">{t(data.description)}</p>
-                <div className="flex items-center justify-center px-2 py-1 bg-[#035f78]/30 rounded-lg w-20">
-                  <span className="w-auto text-sm">{data.rol}</span>
+      <div className="relative flex w-full justify-center items-center">
+        
+        <div
+          ref={containerRef}
+          className="flex flex-col gap-3 w-[90%] md:w-[93%] h-full overflow-hidden"
+        >
+          {exp.map((data, index) => (
+            <div
+              key={index}
+              className="exp-item flex flex-col md:flex-row gap-4 lg:gap-2"
+            >
+              <img
+                src={data.img}
+                className="w-full md:w-[40%] h-full rounded-2xl border-white/10 select-none"
+              />
+
+              <div className="flex flex-col justify-around card2 px-3 py-2 md:py-0 gap-2 lg:gap-0">
+                <div className="flex flex-col">
+                  <span className="text-[#0091b9] font-semibold text-2xl">
+                    {data.rol}
+                  </span>
+                  <span className="text-white text-lg">{data.client}</span>
+                </div>
+
+                <p className="text-neutral-400">{t(data.description)}</p>
+
+                <div className="flex gap-2">
+                  {data.tech.map((t, i) => (
+                    <img key={i} src={t} className="size-11 select-none" />
+                  ))}
                 </div>
               </div>
             </div>
-          </motion.div>
-        ))}
+          ))}
+        </div>
+
       </div>
     </>
   );

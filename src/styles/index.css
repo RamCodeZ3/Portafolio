@@ -2,28 +2,28 @@
 
 @layer base {
     body{
-        @apply text-white
+        @apply text-white bg-[#121212]
     }
 }
 
 .card {
-    @apply border-1 border-[#035f78] bg-black/40 backdrop-blur-2xl rounded-lg
+    @apply border-1 border-white/10 bg-[#0091b9]/3 rounded-lg
 }
 
 .card2 {
-    @apply border-1 border-[#035f78] bg-black/10 backdrop-blur-2xl rounded-lg
+    @apply border-1 border-white/10 bg-[#0091b9]/3 backdrop-blur-2xl rounded-2xl
 }
 
 .input_form{
-    @apply bg-black/10 px-2 py-1.5 backdrop-blur-2xl rounded-md border-1 border-[#035f78]
+    @apply bg-[#0091b9]/3 p-2 backdrop-blur-2xl rounded-lg border-1 border-white/10 focus:outline-2 focus:outline-offset-2 focus:outline-[#0091b9]
 }
 
 .text_hover{
-    @apply hover:text-[#035f78] transition-colors duration-300 cursor-pointer
+    @apply hover:text-[#0091b9] transition-colors duration-300 cursor-pointer
 }
 
 .buttonIcon{
-  @apply flex justify-center items-center border-1 border-[#035f78] text-[#035f78] bg-black/10 backdrop-blur-2xl rounded-lg p-2 cursor-pointer
+  @apply flex justify-center items-center border-1 border-[#0091b9] text-[#0091b9] bg-black/10 backdrop-blur-2xl rounded-lg p-2 cursor-pointer
 }
 
 section{
@@ -34,6 +34,11 @@ section{
     appearance: none;
 } */
 
+::selection {
+  background-color: #048db3;
+  color: white;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
   height: 5px; 
@@ -41,15 +46,20 @@ section{
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #035f78;
+  background-color: #0091b9;
   border-radius: 6px; 
   border: 3px solid #000;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #067b9c; 
+  background-color: #0091b9; 
 }
 
 ::-webkit-scrollbar-track {
   background-color: #000;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
 }
