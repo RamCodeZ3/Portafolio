@@ -23,8 +23,8 @@ export default function Header() {
   },[english])
 
   return (
-    <div className="fixed flex justify-center items-center w-full h-18 z-10 top-2 p-4">
-      <header className="flex w-[95.5%] max-w-[1600px] z-10 top-0 left-0 py-2 px-2 items-center justify-around bg-[#0091b9]/3 border border-white/10 rounded-lg backdrop-blur-2xl">
+    <div className="fixed flex justify-center items-center w-[95.5%] 2xl:w-[80%] max-w-[1550px] h-18 z-10 top-2 p-4">
+      <header className="flex w-full z-10 top-0 left-0 py-2 px-2 items-center justify-around bg-[#0091b9]/3 border border-white/10 rounded-lg backdrop-blur-2xl">
         <img src="general/RamCodeHeader.png" onClick={handleDivClick} className="cursor-pointer size-[30%] md:size-[11%] select-none" alt="Logo"/>
         <div className="hidden md:flex gap-4">
           <a href="#start" className='text_hover'>{t('header.start')}</a>

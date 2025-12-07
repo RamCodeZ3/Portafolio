@@ -44,7 +44,7 @@ export default function Animation({ active }: { active: boolean }){
     return(
         <div className="fixed w-full h-full overflow-hidden flex-col items-center justify-center z-100 bg-neutral-900 cursor-none">
             <div className="flex justify-center w-full h-full items-center relative select-none ">
-                <span ref={ramAnimate} className={`font-semibold text-6xl absolute left-[37.5%] 2xl:left-[40%] opacity-0`}>Ram</span>
+                <span ref={ramAnimate} className={`font-semibold text-6xl absolute left-[27%] lg:left-[37.5%] 2xl:left-[42%] opacity-0`}>Ram</span>
                 <div className="w-30 h-30">
                     <img
                         ref={imgAnimate} 
@@ -52,7 +52,7 @@ export default function Animation({ active }: { active: boolean }){
                         className={`w-full h-full object-cover opacity-0`} 
                     />
                 </div>
-                <span ref={codeAnimate} className={`font-semibold text-6xl absolute right-[35.5%] 2xl:right-[38.5%] opacity-0`}>Code</span>
+                <span ref={codeAnimate} className={`font-semibold text-6xl absolute right-[23%] lg:right-[35.5%] 2xl:right-[40.5%] opacity-0`}>Code</span>
             </div>
         </div>
     )
