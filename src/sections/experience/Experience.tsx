@@ -44,7 +44,7 @@ export default function Experiencie() {
         
         <div
           ref={containerRef}
-          className="flex flex-col gap-3 w-[90%] md:w-[93%] h-full overflow-hidden"
+          className="flex flex-col gap-3 w-[90%] md:w-[93%] h-full  overflow-hidden"
         >
           {exp.map((data, index) => (
             <div
@@ -58,13 +58,13 @@ export default function Experiencie() {
 
               <div className="flex flex-col justify-around card2 px-3 py-2 md:py-0 gap-2 lg:gap-0">
                 <div className="flex flex-col">
-                  <span className="text-[#0091b9] font-semibold text-2xl">
+                  <span className="text-[#0091b9] font-semibold text-2xl 2xl:text-3xl">
                     {data.rol}
                   </span>
                   <span className="text-white text-lg">{data.client}</span>
                 </div>
 
-                <p className="text-neutral-400">{t(data.description)}</p>
+                <p className="text-neutral-400 2xl:text-xl 2xl:leading-10">{t(data.description)}</p>
 
                 <div className="flex gap-2">
                   {data.tech.map((t, i) => (

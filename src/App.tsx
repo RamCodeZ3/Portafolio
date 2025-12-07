@@ -28,9 +28,10 @@ export default function App() {
       <Animation active={!active} />
 
       <div className={`${active ? "opacity-100" : "opacity-0"} transition-opacity duration-700`}>
-        <Header />
+        
         <main className="bg-[#121212] relative flex flex-col gap-2 w-full min-h-dvh justify-center items-center overflow-x-hidden">
-          <section id="start" className="mt-22">
+          <Header />
+          <section id="start" className="mt-26 md:mt-22 lg:mt-26 2xl:mt-30 w-full flex justify-center items-center">
             <Start />
           </section>
           <section id="exp" className="w-full">
