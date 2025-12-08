@@ -48,7 +48,7 @@ export default function Services() {
           {services.map((data, index) => (
             <div
               key={index}
-              className="service-item card2 flex flex-col h-full justify-center gap-2 p-6"
+              className="service-item card2 flex flex-col h-full justify-center gap-2 p-6 2xl:p-10"
             >
               <div className="flex gap-2 items-center text-[#0091b9]">
                 <div className="border-1 border-[#0091b9] bg-[#0091b9]/3 rounded-lg p-2">

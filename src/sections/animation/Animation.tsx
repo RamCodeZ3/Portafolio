@@ -43,8 +43,20 @@ export default function Animation({ active }: { active: boolean }){
 
     return(
         <div className="fixed w-full h-full overflow-hidden flex-col items-center justify-center z-100 bg-neutral-900 cursor-none">
-            <div className="flex justify-center w-full h-full items-center relative select-none ">
-                <span ref={ramAnimate} className={`font-semibold text-6xl absolute left-[27%] lg:left-[37.5%] 2xl:left-[42%] opacity-0`}>Ram</span>
+            <div className="md:hidden flex justify-center items-center md:fixed w-full h-full bg-neutral-900 z-110">
+                 <span className={`font-semibold text-5xl `}>Ram</span>
+                <div className="w-20 h-20">
+                    <img
+
+                        src="/general/Ram.webp" 
+                        className={`w-full h-full object-cover`} 
+                    />
+                </div>
+                <span className={`font-semibold text-5xl`}>Code</span>
+            </div>
+            
+            <div className=" flex justify-center w-full h-full items-center relative select-none ">
+                <span ref={ramAnimate} className={`font-semibold text-6xl md:absolute  lg:left-[37.5%] 2xl:left-[42%] opacity-0`}>Ram</span>
                 <div className="w-30 h-30">
                     <img
                         ref={imgAnimate} 

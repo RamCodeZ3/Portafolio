@@ -165,7 +165,7 @@ export default function Form() {
 
         <button
           type="submit"
-          className="bg-gradient-to-r text-white from-[#0091b9] to-[#121e4e] py-2 font-semibold rounded-lg"
+          className="bg-gradient-to-r text-white from-[#0091b9] to-[#121e4e] py-2 font-semibold rounded-lg cursor-pointer"
         >
           {t("contacts.formButton")}
         </button>
