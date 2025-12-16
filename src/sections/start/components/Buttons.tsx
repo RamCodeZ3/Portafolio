@@ -6,9 +6,6 @@ const Openpage = (link: string) => {
     }
   };
 
-const handleClick = () => {
-    alert("Este cv se esta actualizando")
-}
 
 function Buttons(){
     return(
@@ -20,7 +17,7 @@ function Buttons(){
             <button className='buttonIcon' onClick={() => Openpage('https://www.linkedin.com/in/aram-musset-z3/')}>
                 <Linkedin size={22}/>
             </button>
-            <button className='buttonIcon' title='cv' onClick={handleClick}>
+            <button className='buttonIcon' title='cv' onClick={() => Openpage('https://portfolio-aram.vercel.app/AramMussetCV.pdf')}>
                 <FileText size={22}/>
             </button>
         </div>

@@ -1,5 +1,6 @@
 const technologies = [
   "svg/Python-Dark.svg",
+  "svg/FastAPI.svg",
   "svg/Django.svg",
   "svg/JavaScript.svg",
   "svg/TypeScript.svg",
