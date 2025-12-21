@@ -159,7 +159,7 @@ export default function Form() {
             onChange={handleChange}
             placeholder={t("contacts.formTextareaMessage")}
             required
-            className="h-30 input_form"
+            className="h-30 2xl:h-40 input_form"
           />
         </div>
 

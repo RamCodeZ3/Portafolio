@@ -10,7 +10,7 @@ export default function FastContacts() {
         <b className="text-xl text-[#0091b9]">{t('contacts.fastTitle')}</b>
         {contactsInfo.map((contact, i) => (
           <a key={i} href={contact.link} target="_blank">
-            <div className="card2 flex cursor-pointer gap-2 rounded-md hover:scale-103 transition-all duration-300 p-2 md:w-[98%] lg:w-80 h-auto">
+            <div className="card2 flex cursor-pointer gap-2 rounded-md hover:scale-103 transition-all duration-300 p-2 md:w-[98%] lg:w-80 h-auto ">
               <div className="flex justify-center items-center p-3 border border-[#0091b9] text-[#0091b9] rounded-lg">
                 {contact.icon == null?
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M9 3q-2.5.5-5 2q-3 5-3 12q2 2.5 6 4q1-1.5 1.5-3.5M7 17q5 2 10 0m-1.5.5q.5 2 1.5 3.5q4-1.5 6-4q0-7-3-12q-2.5-1.5-5-2l-1 2q-2-.5-4 0L9 3"/><circle cx="8" cy="12" r="1"/><circle cx="16" cy="12" r="1"/></g></svg>

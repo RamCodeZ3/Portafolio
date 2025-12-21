@@ -61,7 +61,7 @@ export default function Experiencie() {
                   <span className="text-[#0091b9] font-semibold text-2xl 2xl:text-3xl">
                     {data.rol}
                   </span>
-                  <span className="text-white text-lg">{data.client}</span>
+                  <span className="text-white text-lg font-semibold">{data.client}</span>
                 </div>
 
                 <p className="text-neutral-400 2xl:text-xl 2xl:leading-10">{t(data.description)}</p>
