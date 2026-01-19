@@ -44,34 +44,40 @@ export default function Experiencie() {
         
         <div
           ref={containerRef}
-          className="flex flex-col gap-3 w-[90%] md:w-[93%] h-full  overflow-hidden"
+          className="flex flex-col gap-5 w-[90%] md:w-[93%] h-full overflow-hidden"
         >
+          
           {exp.map((data, index) => (
             <div
               key={index}
-              className="exp-item flex flex-col md:flex-row gap-4 lg:gap-2"
+              className="exp-item flex flex-col md:flex-row gap-4 lg:gap-5"
             >
               <img
                 src={data.img}
-                className="w-full md:w-[40%] h-full rounded-2xl border-white/10 select-none"
+                className="w-full md:w-[40%] h-full rounded-3xl rounded-tl-lg rounded-br-lg border-white/10 select-none "
               />
 
-              <div className="flex flex-col justify-around card2 px-3 py-2 md:py-0 gap-2 lg:gap-0">
-                <div className="flex flex-col">
-                  <span className="text-[#0091b9] font-semibold text-2xl 2xl:text-3xl">
-                    {data.rol}
-                  </span>
-                  <span className="text-white text-lg font-semibold">{data.client}</span>
-                </div>
+              <div className='p-2 bg-[#0091b9]/10 border border-white/10 rounded-3xl rounded-tl-lg rounded-br-lg'>
+                <div className='flex w-full h-full bg-[#121212] rounded-3xl rounded-tl-lg rounded-br-lg border border-white/10'>
+                  <div className="flex flex-col justify-around px-3 py-2 md:py-0 gap-2 lg:gap-0 bg-[#0091b9]/3">
+                    <div className="flex flex-col">
+                      <span className="text-[#0091b9] font-semibold text-2xl 2xl:text-3xl">
+                        {data.rol}
+                      </span>
+                      <span className="text-white text-lg font-semibold">{data.client}</span>
+                    </div>
 
-                <p className="text-neutral-400 2xl:text-xl 2xl:leading-10">{t(data.description)}</p>
+                    <p className="text-neutral-400 2xl:text-xl 2xl:leading-10">{t(data.description)}</p>
 
-                <div className="flex gap-2">
-                  {data.tech.map((t, i) => (
-                    <img key={i} src={t} className="size-11 select-none" />
-                  ))}
+                    <div className="flex gap-2">
+                      {data.tech.map((t, i) => (
+                        <img key={i} src={t} className="size-11 select-none" />
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
+
             </div>
           ))}
         </div>
