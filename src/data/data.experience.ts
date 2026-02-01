@@ -1,7 +1,7 @@
 export const exp = [
     {
         img: "./screenshot/apuestas.webp",
-        description: "experience.description3",
+        description: "experience.description4",
         rol: "Full-Stack Developer",
         client: "Pagina de Sorteos",
         tech: ["svg/TypeScript.svg", "svg/React-Dark.svg", "svg/TailwindCSS-Dark.svg", "svg/ExpressJS-Dark.svg", "svg/Supabase-Dark.svg", "svg/PostgreSQL.svg" ],

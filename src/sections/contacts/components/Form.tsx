@@ -1,7 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
-import { serviceId, templateId, publicKey } from "../data/data"
+import { serviceId, templateId, publicKey } from "../../../data/data"
 import { ChevronDown, User, Mail, MonitorCog, MessageCircleMore } from "lucide-react";
 
 interface FormContact {

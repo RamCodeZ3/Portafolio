@@ -1,4 +1,4 @@
-import contactsInfo from '../data/data';
+import contactsInfo from '../../../data/data';
 import { useTranslation } from 'react-i18next';
 
 export default function FastContacts() {
